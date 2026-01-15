@@ -1,8 +1,15 @@
 {
-  "name": "ched-version-2",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@eng-bernardo/ched-version-2",
+  "version": "1.0.0",
+  "description": "CHED Version 2 - A React application showcasing systems and variations",
+  "author": "Eng-Bernardo <joctanbernardo@gmail.com>",
+  "license": "MIT",
+  "private": false,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/Ched-Version-2.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
