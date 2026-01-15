@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
+import OurStory from './components/OurStory';
 import SystemShowcase from './components/SystemShowcase';
 import VariationsSection from './components/VariationsSection';
 import GallerySection from './components/GallerySection';
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <AboutSection />
+        <OurStory />
         <GallerySection />
         <SystemShowcase />
         <WireframeSection />

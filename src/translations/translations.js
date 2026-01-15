@@ -148,6 +148,11 @@ export const translations = {
                     desc: "Transforme suas ideias em wireframes estruturados convertendo imagens ou esboços em designs prontos para edição."
                 }
             }
+        },
+        ourStory: {
+            title: "Nossa História",
+            description: "Na vanguarda da IA e do design, somos uma equipe de inovadores apaixonados dedicados a transformar o processo criativo. Nossa missão é capacitar designers e equipes de produto com ferramentas de ponta que aprimoram a criatividade, otimizam fluxos de trabalho e dão vida às ideias mais rápido do que nunca.",
+            cta: "Saiba Mais"
         }
     },
     en: {
@@ -299,6 +304,11 @@ export const translations = {
                     desc: "Transform your ideas into structured wireframes by converting images or sketches into ready-to-edit designs."
                 }
             }
+        },
+        ourStory: {
+            title: "Our Story",
+            description: "At the forefront of AI and design, we are a team of passionate innovators dedicated to transforming the creative process. Our mission is to empower designers and product teams with cutting-edge tools that enhance creativity, streamline workflows, and bring ideas to life faster than ever before.",
+            cta: "Learn More"
         }
     },
     fr: {
@@ -450,6 +460,11 @@ export const translations = {
                     desc: "Transformez vos idées en wireframes structurés en convertissant des images ou des croquis."
                 }
             }
+        },
+        ourStory: {
+            title: "Notre Histoire",
+            description: "À la pointe de l'IA et du design, nous sommes une équipe d'innovateurs passionnés dédiés à transformer le processus créatif. Notre mission est de donner aux concepteurs et aux équipes de produit les outils de pointe qui améliorent la créativité, rationalisent les flux de travail et donnent vie aux idées plus rapidement que jamais.",
+            cta: "En savoir plus"
         }
     }
 };
