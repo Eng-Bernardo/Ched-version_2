@@ -3,6 +3,7 @@ export const translations = {
         nav: {
             what_we_do: "O que fazemos",
             systems: "Sistemas",
+            portfolio: "Portfólio",
             contact: "Contato",
             get_in_touch: "Entre em contato"
         },
@@ -153,12 +154,95 @@ export const translations = {
             title: "Nossa História",
             description: "Na vanguarda da IA e do design, somos uma equipe de inovadores apaixonados dedicados a transformar o processo criativo. Nossa missão é capacitar designers e equipes de produto com ferramentas de ponta que aprimoram a criatividade, otimizam fluxos de trabalho e dão vida às ideias mais rápido do que nunca.",
             cta: "Saiba Mais"
+        },
+        contact: {
+            hero: {
+                title: "Entre em Contato",
+                subtitle: "Vamos transformar suas ideias em sistemas reais. Nossa equipe está pronta para discutir seu próximo projeto."
+            },
+            info: {
+                email_label: "Email",
+                phone_label: "Telefone",
+                address_label: "Localização",
+                hours_label: "Horário",
+                hours_value: "Seg - Sex, 9h - 18h",
+                why_title: "Por que nos escolher?",
+                why_description: "Somos especialistas em transformar conceitos em sistemas escaláveis. Com foco em arquitetura robusta e design moderno, entregamos soluções que evoluem com seu negócio."
+            },
+            form: {
+                title: "Envie uma Mensagem",
+                description: "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+                name: "Nome",
+                name_placeholder: "Seu nome completo",
+                email: "Email",
+                email_placeholder: "seu.email@exemplo.com",
+                subject: "Assunto",
+                subject_placeholder: "Sobre o que você quer falar?",
+                message: "Mensagem",
+                message_placeholder: "Conte-nos mais sobre seu projeto...",
+                send: "Enviar Mensagem",
+                sending: "Enviando...",
+                success: "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+                error: "Erro ao enviar mensagem. Tente novamente."
+            },
+            response: {
+                title: "Tempo de Resposta",
+                description: "Estamos comprometidos em responder rapidamente às suas dúvidas",
+                email_time: "Resposta por Email",
+                urgent_time: "Casos Urgentes",
+                support: "Suporte Disponível"
+            }
+        },
+        portfolio: {
+            hero: {
+                title: "Nosso Portfólio",
+                subtitle: "Sistemas e plataformas web que projetamos, desenvolvemos e mantemos. Cada projeto é construído com arquitetura robusta e design moderno."
+            },
+            categories: {
+                all: "Todos",
+                fintech: "Fintech",
+                saas: "SaaS",
+                ecommerce: "E-commerce",
+                enterprise: "Empresarial"
+            },
+            projects: {
+                abaco: {
+                    title: "Abaco Finance",
+                    category: "Fintech",
+                    description: "Uma plataforma abrangente de gestão financeira e de ativos projetada para escala. Sistema completo com dashboard em tempo real, relatórios automáticos e segurança de nível empresarial.",
+                    tech: "React, Node.js, PostgreSQL, AWS",
+                    year: "2024"
+                },
+                saas_analytics: {
+                    title: "SaaS Analytics Platform",
+                    category: "SaaS",
+                    description: "Plataforma analítica avançada para empresas SaaS. Rastreamento de métricas em tempo real, visualizações personalizadas e insights automáticos.",
+                    tech: "React, Python, MongoDB, Docker",
+                    year: "2024"
+                },
+                logistics_pro: {
+                    title: "Logistics Pro",
+                    category: "Empresarial",
+                    description: "Sistema robusto de gestão logística com rastreamento em tempo real, otimização de rotas e relatórios detalhados de desempenho.",
+                    tech: "React Native, Node.js, Redis",
+                    year: "2023"
+                }
+            },
+            cta: {
+                title: "Tem um projeto em mente?",
+                description: "Vamos construir algo incrível juntos",
+                button: "Iniciar Projeto"
+            },
+            view_project: "Ver Projeto",
+            live_demo: "Demo ao Vivo",
+            case_study: "Estudo de Caso"
         }
     },
     en: {
         nav: {
             what_we_do: "What we do",
             systems: "Systems",
+            portfolio: "Portfolio",
             contact: "Contact",
             get_in_touch: "Get in touch"
         },
@@ -309,12 +393,95 @@ export const translations = {
             title: "Our Story",
             description: "At the forefront of AI and design, we are a team of passionate innovators dedicated to transforming the creative process. Our mission is to empower designers and product teams with cutting-edge tools that enhance creativity, streamline workflows, and bring ideas to life faster than ever before.",
             cta: "Learn More"
+        },
+        contact: {
+            hero: {
+                title: "Get in Touch",
+                subtitle: "Let's turn your ideas into real systems. Our team is ready to discuss your next project."
+            },
+            info: {
+                email_label: "Email",
+                phone_label: "Phone",
+                address_label: "Location",
+                hours_label: "Hours",
+                hours_value: "Mon - Fri, 9AM - 6PM",
+                why_title: "Why Choose Us?",
+                why_description: "We specialize in transforming concepts into scalable systems. With a focus on robust architecture and modern design, we deliver solutions that evolve with your business."
+            },
+            form: {
+                title: "Send a Message",
+                description: "Fill out the form below and we'll get back to you as soon as possible.",
+                name: "Name",
+                name_placeholder: "Your full name",
+                email: "Email",
+                email_placeholder: "your.email@example.com",
+                subject: "Subject",
+                subject_placeholder: "What would you like to discuss?",
+                message: "Message",
+                message_placeholder: "Tell us more about your project...",
+                send: "Send Message",
+                sending: "Sending...",
+                success: "Message sent successfully! We'll be in touch soon.",
+                error: "Error sending message. Please try again."
+            },
+            response: {
+                title: "Response Time",
+                description: "We're committed to responding quickly to your inquiries",
+                email_time: "Email Response",
+                urgent_time: "Urgent Cases",
+                support: "Support Available"
+            }
+        },
+        portfolio: {
+            hero: {
+                title: "Our Portfolio",
+                subtitle: "Web systems and platforms we've designed, developed, and maintain. Each project is built with robust architecture and modern design."
+            },
+            categories: {
+                all: "All",
+                fintech: "Fintech",
+                saas: "SaaS",
+                ecommerce: "E-commerce",
+                enterprise: "Enterprise"
+            },
+            projects: {
+                abaco: {
+                    title: "Abaco Finance",
+                    category: "Fintech",
+                    description: "A comprehensive financial and asset management platform designed for scale. Complete system with real-time dashboard, automated reporting, and enterprise-grade security.",
+                    tech: "React, Node.js, PostgreSQL, AWS",
+                    year: "2024"
+                },
+                saas_analytics: {
+                    title: "SaaS Analytics Platform",
+                    category: "SaaS",
+                    description: "Advanced analytics platform for SaaS companies. Real-time metrics tracking, customizable visualizations, and automated insights.",
+                    tech: "React, Python, MongoDB, Docker",
+                    year: "2024"
+                },
+                logistics_pro: {
+                    title: "Logistics Pro",
+                    category: "Enterprise",
+                    description: "Robust logistics management system with real-time tracking, route optimization, and detailed performance reporting.",
+                    tech: "React Native, Node.js, Redis",
+                    year: "2023"
+                }
+            },
+            cta: {
+                title: "Have a project in mind?",
+                description: "Let's build something amazing together",
+                button: "Start Project"
+            },
+            view_project: "View Project",
+            live_demo: "Live Demo",
+            case_study: "Case Study"
         }
     },
     fr: {
         nav: {
             what_we_do: "Ce que nous faisons",
             systems: "Systèmes",
+            portfolio: "Portfolio",
             contact: "Contact",
             get_in_touch: "Contactez-nous"
         },
@@ -465,6 +632,88 @@ export const translations = {
             title: "Notre Histoire",
             description: "À la pointe de l'IA et du design, nous sommes une équipe d'innovateurs passionnés dédiés à transformer le processus créatif. Notre mission est de donner aux concepteurs et aux équipes de produit les outils de pointe qui améliorent la créativité, rationalisent les flux de travail et donnent vie aux idées plus rapidement que jamais.",
             cta: "En savoir plus"
+        },
+        contact: {
+            hero: {
+                title: "Contactez-nous",
+                subtitle: "Transformons vos idées en systèmes réels. Notre équipe est prête à discuter de votre prochain projet."
+            },
+            info: {
+                email_label: "Email",
+                phone_label: "Téléphone",
+                address_label: "Localisation",
+                hours_label: "Horaires",
+                hours_value: "Lun - Ven, 9h - 18h",
+                why_title: "Pourquoi nous choisir?",
+                why_description: "Nous sommes spécialisés dans la transformation de concepts en systèmes évolutifs. En mettant l'accent sur une architecture robuste et un design moderne, nous livrons des solutions qui évoluent avec votre entreprise."
+            },
+            form: {
+                title: "Envoyer un Message",
+                description: "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+                name: "Nom",
+                name_placeholder: "Votre nom complet",
+                email: "Email",
+                email_placeholder: "votre.email@exemple.com",
+                subject: "Sujet",
+                subject_placeholder: "De quoi souhaitez-vous discuter?",
+                message: "Message",
+                message_placeholder: "Parlez-nous de votre projet...",
+                send: "Envoyer le Message",
+                sending: "Envoi...",
+                success: "Message envoyé avec succès! Nous vous contacterons bientôt.",
+                error: "Erreur lors de l'envoi. Veuillez réessayer."
+            },
+            response: {
+                title: "Temps de Réponse",
+                description: "Nous nous engageons à répondre rapidement à vos demandes",
+                email_time: "Réponse Email",
+                urgent_time: "Cas Urgents",
+                support: "Support Disponible"
+            }
+        },
+        portfolio: {
+            hero: {
+                title: "Notre Portfolio",
+                subtitle: "Systèmes et plateformes web que nous avons conçus, développés et maintenons. Chaque projet est construit avec une architecture robuste et un design moderne."
+            },
+            categories: {
+                all: "Tous",
+                fintech: "Fintech",
+                saas: "SaaS",
+                ecommerce: "E-commerce",
+                enterprise: "Entreprise"
+            },
+            projects: {
+                abaco: {
+                    title: "Abaco Finance",
+                    category: "Fintech",
+                    description: "Une plateforme complète de gestion financière et d'actifs conçue pour l'évolution. Système complet avec tableau de bord en temps réel, rapports automatisés et sécurité de niveau entreprise.",
+                    tech: "React, Node.js, PostgreSQL, AWS",
+                    year: "2024"
+                },
+                saas_analytics: {
+                    title: "Plateforme d'Analyse SaaS",
+                    category: "SaaS",
+                    description: "Plateforme d'analyse avancée pour les entreprises SaaS. Suivi des métriques en temps réel, visualisations personnalisables et insights automatisés.",
+                    tech: "React, Python, MongoDB, Docker",
+                    year: "2024"
+                },
+                logistics_pro: {
+                    title: "Logistics Pro",
+                    category: "Entreprise",
+                    description: "Système de gestion logistique robuste avec suivi en temps réel, optimisation des itinéraires et rapports de performance détaillés.",
+                    tech: "React Native, Node.js, Redis",
+                    year: "2023"
+                }
+            },
+            cta: {
+                title: "Vous avez un projet en tête?",
+                description: "Construisons quelque chose d'incroyable ensemble",
+                button: "Démarrer le Projet"
+            },
+            view_project: "Voir le Projet",
+            live_demo: "Démo en Direct",
+            case_study: "Étude de Cas"
         }
     }
 };

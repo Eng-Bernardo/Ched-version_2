@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
@@ -8,6 +9,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,9 +20,10 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: t('nav.what_we_do'), href: '#what-we-do' },
-        { name: t('nav.systems'), href: '#systems' },
-        { name: t('nav.contact'), href: '#contact' },
+        { name: t('nav.what_we_do'), href: '/#what-we-do', isRoute: false },
+        { name: t('nav.systems'), href: '/#systems', isRoute: false },
+        { name: t('nav.portfolio'), href: '/portfolio', isRoute: true },
+        { name: t('nav.contact'), href: '/contact', isRoute: true },
     ];
 
     const languages = [
@@ -38,20 +41,31 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
-                <a href="#" className="font-bold text-2xl tracking-tighter text-dark">
+                <Link to="/" className="font-bold text-2xl tracking-tighter text-dark">
                     CHED<span className="text-primary">LABS</span>
-                </a>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
-                        >
-                            {link.name}
-                        </a>
+                        link.isRoute ? (
+                            <NavLink
+                                key={link.name}
+                                to={link.href}
+                                className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'text-slate-600 hover:text-primary'
+                                    }`}
+                            >
+                                {link.name}
+                            </NavLink>
+                        ) : (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+                            >
+                                {link.name}
+                            </a>
+                        )
                     ))}
 
                     {/* Language Selector */}
@@ -92,12 +106,12 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
-                    <a
-                        href="#contact"
+                    <Link
+                        to="/contact"
                         className="px-5 py-2.5 bg-dark text-white text-sm font-medium rounded-full hover:bg-opacity-90 transition-all"
                     >
                         {t('nav.get_in_touch')}
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -123,14 +137,25 @@ const Navbar = () => {
                         className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden flex flex-col items-center py-8 space-y-6"
                     >
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-lg font-medium text-slate-700 hover:text-primary"
-                            >
-                                {link.name}
-                            </a>
+                            link.isRoute ? (
+                                <Link
+                                    key={link.name}
+                                    to={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-lg font-medium text-slate-700 hover:text-primary"
+                                >
+                                    {link.name}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-lg font-medium text-slate-700 hover:text-primary"
+                                >
+                                    {link.name}
+                                </a>
+                            )
                         ))}
 
                         <div className="flex gap-4">
@@ -148,13 +173,13 @@ const Navbar = () => {
                             ))}
                         </div>
 
-                        <a
-                            href="#contact"
+                        <Link
+                            to="/contact"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="px-6 py-3 bg-primary text-white font-medium rounded-full hover:bg-opacity-90"
                         >
                             {t('nav.get_in_touch')}
-                        </a>
+                        </Link>
                     </motion.div>
                 )}
             </AnimatePresence>
