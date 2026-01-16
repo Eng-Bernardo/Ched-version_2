@@ -123,7 +123,7 @@ export const translations = {
 
         ourStory: {
             title: "Nossa História",
-            description: "Na vanguarda da IA e do design, somos uma equipe de inovadores apaixonados dedicados a transformar o processo criativo. Nossa missão é capacitar designers e equipes de produto com ferramentas de ponta que aprimoram a criatividade, otimizam fluxos de trabalho e dão vida às ideias mais rápido do que nunca.",
+            description: "Somos construtores de sistemas reais. Nossa missão é transformar ideias em ecossistemas digitais estruturados e escaláveis. Não apenas desenvolvemos software — arquitetamos soluções completas que evoluem com seu negócio, transformando conceitos em produtos digitais robustos e duradouros.",
             cta: "Saiba Mais"
         },
         aboutUs: {
@@ -405,7 +405,7 @@ export const translations = {
 
         ourStory: {
             title: "Our Story",
-            description: "At the forefront of AI and design, we are a team of passionate innovators dedicated to transforming the creative process. Our mission is to empower designers and product teams with cutting-edge tools that enhance creativity, streamline workflows, and bring ideas to life faster than ever before.",
+            description: "We are builders of real systems. Our mission is to transform ideas into structured, scalable digital ecosystems. We don't just develop software — we architect complete solutions that evolve with your business, turning concepts into robust, long-lasting digital products.",
             cta: "Learn More"
         },
         aboutUs: {
@@ -687,7 +687,7 @@ export const translations = {
 
         ourStory: {
             title: "Notre Histoire",
-            description: "À la pointe de l'IA et du design, nous sommes une équipe d'innovateurs passionnés dédiés à transformer le processus créatif. Notre mission est de donner aux concepteurs et aux équipes de produit les outils de pointe qui améliorent la créativité, rationalisent les flux de travail et donnent vie aux idées plus rapidement que jamais.",
+            description: "Nous sommes des constructeurs de systèmes réels. Notre mission est de transformer des idées en écosystèmes numériques structurés et évolutifs. Nous ne développons pas seulement des logiciels — nous concevons des solutions complètes qui évoluent avec votre entreprise, transformant des concepts en produits numériques robustes et durables.",
             cta: "En savoir plus"
         },
         aboutUs: {
