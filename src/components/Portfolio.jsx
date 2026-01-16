@@ -57,7 +57,7 @@ const Portfolio = () => {
                         alt="Portfolio Hero"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/80 to-white/70" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/70 to-white/60" />
                 </div>
 
                 {/* Hero Content */}
