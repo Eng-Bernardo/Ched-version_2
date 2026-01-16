@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import dashboardImg from '../assets/images/dashboard_dark_analytics_1768301257210.png';
 import fintechImg from '../assets/images/fintech_asset_management_1768301273170.png';
 import mobileImg from '../assets/images/mobile_logistics_app_1768301288673.png';
+import portfolioHero from '../assets/images/portfolio_hero.png';
 
 const Portfolio = () => {
     const { t } = useLanguage();
@@ -47,32 +48,44 @@ const Portfolio = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-            {/* Hero Section */}
-            <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-                {/* Background decorations */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-500/5 rounded-full blur-3xl -z-10" />
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-3xl -z-10" />
-
-                <div className="max-w-7xl mx-auto text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-full mb-6">
-                            <Sparkles className="w-4 h-4 text-indigo-600" />
-                            <span className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-                                {t('portfolio.categories.all')}
-                            </span>
-                        </div>
-                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-                            {t('portfolio.hero.title')}
-                        </h1>
-                        <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            {t('portfolio.hero.subtitle')}
-                        </p>
-                    </motion.div>
+            {/* Hero Section with Background Image */}
+            <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img
+                        src={portfolioHero}
+                        alt="Portfolio Hero"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/80 to-white/70" />
                 </div>
+
+                {/* Hero Content */}
+                <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+                    <div className="text-center w-full">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 rounded-full mb-6">
+                                <Sparkles className="w-4 h-4 text-indigo-600" />
+                                <span className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
+                                    {t('portfolio.categories.all')}
+                                </span>
+                            </div>
+                            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-indigo-600 mb-6">
+                                {t('portfolio.hero.title')}
+                            </h1>
+                            <p className="text-xl sm:text-2xl text-gray-900 max-w-3xl mx-auto leading-relaxed font-medium">
+                                {t('portfolio.hero.subtitle')}
+                            </p>
+                        </motion.div>
+                    </div>
+                </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
             </section>
 
             {/* Category Filter */}
