@@ -5,9 +5,9 @@ const OurStory = () => {
 
     // Team member avatars with color variations
     const teamMembers = [
-        { name: 'Ben', color: 'from-emerald-400 to-cyan-500', position: { top: '15%', left: '20%' }, delay: 0 },
+        { name: 'Edgar', color: 'from-emerald-400 to-cyan-500', position: { top: '15%', left: '20%' }, delay: 0 },
         { name: 'Alexandre', color: 'from-blue-400 to-indigo-500', position: { top: '10%', right: '30%' }, delay: 0.5 },
-        { name: 'Eddy', color: 'from-orange-400 to-pink-500', position: { bottom: '25%', right: '15%' }, delay: 1 },
+        { name: 'Benny', color: 'from-orange-400 to-pink-500', position: { bottom: '25%', right: '15%' }, delay: 1 },
     ];
 
     return (
