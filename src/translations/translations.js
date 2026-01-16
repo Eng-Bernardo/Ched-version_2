@@ -134,9 +134,8 @@ export const translations = {
             whatIs: {
                 title: "O que é CHED LABS",
                 description: "CHED LABS é uma software house e laboratório de sistemas, focada na criação, arquitetura e evolução de produtos digitais e ecossistemas de software.",
-                notAgency: "Não somos uma agência criativa, nem uma empresa de marketing. Somos construtores de sistemas.",
-                operations: "CHED LABS opera como um laboratório de projetos digitais, uma empresa de desenvolvimento de software e aplicações, uma criadora de plataformas e sistemas, e uma holding que possui ecossistemas de software.",
-                mainSystem: "Um dos nossos principais sistemas existentes é o Abaco Finance, uma plataforma de gestão financeira e de ativos."
+                notAgency: "Não somos apenas mais uma agência. Somos construtores de sistemas reais.",
+                operations: "CHED LABS opera como um laboratório de projetos digitais, uma empresa de desenvolvimento de software e aplicações, uma criadora de plataformas e sistemas, e uma holding que possui ecossistemas de software."
             },
             concept: {
                 title: "Conceito Central",
@@ -189,8 +188,14 @@ export const translations = {
                 }
             },
             summary: {
-                title: "Resumo Final",
-                description: "CHED LABS deve ser percebida como uma empresa de tecnologia real, uma software house estruturada, um laboratório de sistemas, e uma criadora e proprietária de produtos digitais."
+                title: "Nossa Identidade",
+                description: "CHED LABS deve ser percebida como uma empresa de tecnologia real, uma software house estruturada, um laboratório de sistemas, e uma criadora e proprietária de produtos digitais.",
+                items: [
+                    "Empresa de tecnologia real",
+                    "Software house estruturada",
+                    "Laboratório de sistemas",
+                    "Criadora de produtos digitais"
+                ]
             }
         },
         contact: {
@@ -411,9 +416,8 @@ export const translations = {
             whatIs: {
                 title: "What CHED LABS Is",
                 description: "CHED LABS is a software house and systems lab, focused on the creation, architecture, and evolution of digital products and software ecosystems.",
-                notAgency: "We are not a creative agency, nor a marketing company. We are system builders.",
-                operations: "CHED LABS operates as a digital project lab, a software and application development company, a creator of platforms and systems, and a holding company that owns software ecosystems.",
-                mainSystem: "One of our main existing systems is Abaco Finance, a financial and asset management platform."
+                notAgency: "We are not just another agency. We are builders of real systems.",
+                operations: "CHED LABS operates as a digital project lab, a software and application development company, a creator of platforms and systems, and a holding company that owns software ecosystems."
             },
             concept: {
                 title: "Core Concept",
@@ -466,8 +470,14 @@ export const translations = {
                 }
             },
             summary: {
-                title: "Final Summary",
-                description: "CHED LABS must be perceived as a real technology company, a structured software house, a systems laboratory, and a creator and owner of digital products."
+                title: "Our Identity",
+                description: "CHED LABS must be perceived as a real technology company, a structured software house, a systems laboratory, and a creator and owner of digital products.",
+                items: [
+                    "Real technology company",
+                    "Structured software house",
+                    "Systems laboratory",
+                    "Creator of digital products"
+                ]
             }
         },
         contact: {
@@ -688,9 +698,8 @@ export const translations = {
             whatIs: {
                 title: "Qu'est-ce que CHED LABS",
                 description: "CHED LABS est une maison de logiciels et un laboratoire de systèmes, axé sur la création, l'architecture et l'évolution de produits numériques et d'écosystèmes logiciels.",
-                notAgency: "Nous ne sommes pas une agence créative, ni une entreprise de marketing. Nous sommes des constructeurs de systèmes.",
-                operations: "CHED LABS fonctionne comme un laboratoire de projets numériques, une entreprise de développement de logiciels et d'applications, un créateur de plateformes et de systèmes, et une société holding possédant des écosystèmes logiciels.",
-                mainSystem: "L'un de nos principaux systèmes existants est Abaco Finance, une plateforme de gestion financière et d'actifs."
+                notAgency: "Nous ne sommes pas juste une autre agence. Nous sommes des constructeurs de systèmes réels.",
+                operations: "CHED LABS fonctionne comme un laboratoire de projets numériques, une entreprise de développement de logiciels et d'applications, un créateur de plateformes et de systèmes, et une société holding possédant des écosystèmes logiciels."
             },
             concept: {
                 title: "Concept Central",
@@ -743,8 +752,14 @@ export const translations = {
                 }
             },
             summary: {
-                title: "Résumé Final",
-                description: "CHED LABS doit être perçue comme une véritable entreprise technologique, une maison de logiciels structurée, un laboratoire de systèmes et un créateur et propriétaire de produits numériques."
+                title: "Notre Identité",
+                description: "CHED LABS doit être perçue comme une véritable entreprise technologique, une maison de logiciels structurée, un laboratoire de systèmes et un créateur et propriétaire de produits numériques.",
+                items: [
+                    "Véritable entreprise technologique",
+                    "Maison de logiciels structurée",
+                    "Laboratoire de systèmes",
+                    "Créateur de produits numériques"
+                ]
             }
         },
         contact: {

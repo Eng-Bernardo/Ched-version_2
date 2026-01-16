@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Code, Network, Cpu, Layers, Building2, Users, Target, Zap } from 'lucide-react';
+import aboutHero from '../assets/images/about_hero.png';
 
 const AboutUs = () => {
     const { t } = useLanguage();
@@ -23,20 +24,32 @@ const AboutUs = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-            {/* Hero Section */}
-            <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-                {/* Background Gradient Orbs */}
-                <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-
-                <div className="relative max-w-6xl mx-auto text-center">
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-                        {t('aboutUs.hero.title')}
-                    </h1>
-                    <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        {t('aboutUs.hero.subtitle')}
-                    </p>
+            {/* Hero Section with Background Image */}
+            <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img
+                        src={aboutHero}
+                        alt="About Hero"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/80" />
                 </div>
+
+                {/* Hero Content */}
+                <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+                    <div className="text-center w-full">
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-indigo-600 mb-6">
+                            {t('aboutUs.hero.title')}
+                        </h1>
+                        <p className="text-xl sm:text-2xl text-gray-900 max-w-3xl mx-auto leading-relaxed font-medium">
+                            {t('aboutUs.hero.subtitle')}
+                        </p>
+                    </div>
+                </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
             </section>
 
             {/* What CHED LABS Is */}
@@ -55,10 +68,6 @@ const AboutUs = () => {
                             </p>
 
                             <p>{t('aboutUs.whatIs.operations')}</p>
-
-                            <p className="text-gray-600 italic">
-                                {t('aboutUs.whatIs.mainSystem')}
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,53 +164,128 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            {/* Positioning: Tone & Visual */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+            {/* Our Identity Section - With Floating Bubbles */}
+            <section className="py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        {/* Tone of Voice */}
-                        <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                {t('aboutUs.positioning.tone.title')}
-                            </h3>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                {t('aboutUs.positioning.tone.description')}
-                            </p>
-                            <p className="text-gray-600 italic">
-                                {t('aboutUs.positioning.tone.avoid')}
+                    {/* Main Content Container with Gradient Background */}
+                    <div className="relative rounded-3xl bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 p-12 sm:p-16 lg:p-20 overflow-hidden">
+                        {/* Animated Floating Bubbles */}
+                        <div
+                            className="absolute pointer-events-none"
+                            style={{
+                                top: '10%',
+                                left: '5%',
+                                animation: 'float-0 4s ease-in-out infinite'
+                            }}
+                        >
+                            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-white font-semibold text-sm">
+                                    1
+                                </div>
+                                <span className="text-white font-medium text-sm pr-1">
+                                    {t('aboutUs.summary.items')[0]}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div
+                            className="absolute pointer-events-none"
+                            style={{
+                                top: '12%',
+                                right: '8%',
+                                animation: 'float-1 3.5s ease-in-out infinite',
+                                animationDelay: '0.5s'
+                            }}
+                        >
+                            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-white font-semibold text-sm">
+                                    2
+                                </div>
+                                <span className="text-white font-medium text-sm pr-1">
+                                    {t('aboutUs.summary.items')[1]}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div
+                            className="absolute pointer-events-none"
+                            style={{
+                                bottom: '15%',
+                                left: '8%',
+                                animation: 'float-2 4.5s ease-in-out infinite',
+                                animationDelay: '1s'
+                            }}
+                        >
+                            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white font-semibold text-sm">
+                                    3
+                                </div>
+                                <span className="text-white font-medium text-sm pr-1">
+                                    {t('aboutUs.summary.items')[2]}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div
+                            className="absolute pointer-events-none"
+                            style={{
+                                bottom: '12%',
+                                right: '6%',
+                                animation: 'float-0 3.8s ease-in-out infinite',
+                                animationDelay: '1.5s'
+                            }}
+                        >
+                            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white font-semibold text-sm">
+                                    4
+                                </div>
+                                <span className="text-white font-medium text-sm pr-1">
+                                    {t('aboutUs.summary.items')[3]}
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Decorative Elements */}
+                        <div className="absolute top-1/4 left-10 w-2 h-2 bg-white/40 rounded-full animate-pulse" />
+                        <div className="absolute top-1/3 right-20 w-3 h-3 bg-white/30 rounded-full animate-pulse"
+                            style={{ animationDelay: '0.5s' }} />
+                        <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-white/40 rounded-full animate-pulse"
+                            style={{ animationDelay: '1s' }} />
+
+                        {/* Content */}
+                        <div className="relative z-10 text-center max-w-3xl mx-auto">
+                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+                                {t('aboutUs.summary.title')}
+                            </h2>
+
+                            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                                {t('aboutUs.summary.description')}
                             </p>
                         </div>
 
-                        {/* Visual Direction */}
-                        <div className="bg-gradient-to-br from-[#0B0F14] to-[#1a1f2e] rounded-3xl p-8 shadow-xl text-white">
-                            <h3 className="text-2xl font-bold mb-4">
-                                {t('aboutUs.positioning.visual.title')}
-                            </h3>
-                            <ul className="space-y-3">
-                                {t('aboutUs.positioning.visual.items').map((item, index) => (
-                                    <li key={index} className="flex items-start gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#4CC9F0] via-[#5A7CFA] to-[#B517F2] flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <div className="w-2 h-2 rounded-full bg-white" />
-                                        </div>
-                                        <span className="text-lg text-white/90">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Final Summary */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-5xl mx-auto">
-                    <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 sm:p-12 shadow-2xl text-white text-center">
-                        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                            {t('aboutUs.summary.title')}
-                        </h2>
-                        <p className="text-xl leading-relaxed text-white/95">
-                            {t('aboutUs.summary.description')}
-                        </p>
+                        {/* Inline styles for custom animations */}
+                        <style jsx>{`
+                            @keyframes float-0 {
+                                0%, 100% { transform: translate(0, 0); }
+                                25% { transform: translate(-10px, -15px); }
+                                50% { transform: translate(5px, -25px); }
+                                75% { transform: translate(-5px, -10px); }
+                            }
+                            
+                            @keyframes float-1 {
+                                0%, 100% { transform: translate(0, 0); }
+                                33% { transform: translate(15px, -20px); }
+                                66% { transform: translate(-10px, -30px); }
+                            }
+                            
+                            @keyframes float-2 {
+                                0%, 100% { transform: translate(0, 0); }
+                                20% { transform: translate(-15px, -10px); }
+                                40% { transform: translate(10px, -25px); }
+                                60% { transform: translate(-5px, -18px); }
+                                80% { transform: translate(8px, -12px); }
+                            }
+                        `}</style>
                     </div>
                 </div>
             </section>
