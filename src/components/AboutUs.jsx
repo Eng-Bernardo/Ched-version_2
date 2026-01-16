@@ -33,7 +33,7 @@ const AboutUs = () => {
                         alt="About Hero"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/80" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/80 to-white/70" />
                 </div>
 
                 {/* Hero Content */}
@@ -50,6 +50,24 @@ const AboutUs = () => {
 
                 {/* Decorative Elements */}
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+            </section>
+
+            {/* CTA Buttons Section */}
+            <section className="-mt-10 relative z-20 px-4 sm:px-6 lg:px-8 mb-10">
+                <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        onClick={() => window.location.href = '/contact'}
+                        className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    >
+                        {t('nav.get_in_touch')}
+                    </button>
+                    <button
+                        onClick={() => window.location.href = '/portfolio'}
+                        className="px-8 py-4 bg-white text-gray-900 border-2 border-gray-200 font-semibold rounded-full hover:bg-gray-50 hover:border-gray-300 transition-all duration-300"
+                    >
+                        {t('hero.explore_systems')}
+                    </button>
+                </div>
             </section>
 
             {/* What CHED LABS Is */}
@@ -169,9 +187,9 @@ const AboutUs = () => {
                 <div className="max-w-6xl mx-auto">
                     {/* Main Content Container with Gradient Background */}
                     <div className="relative rounded-3xl bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 p-12 sm:p-16 lg:p-20 overflow-hidden">
-                        {/* Animated Floating Bubbles */}
+                        {/* Animated Floating Bubbles - Hidden on mobile */}
                         <div
-                            className="absolute pointer-events-none"
+                            className="absolute pointer-events-none hidden md:block"
                             style={{
                                 top: '10%',
                                 left: '5%',
@@ -189,7 +207,7 @@ const AboutUs = () => {
                         </div>
 
                         <div
-                            className="absolute pointer-events-none"
+                            className="absolute pointer-events-none hidden md:block"
                             style={{
                                 top: '12%',
                                 right: '8%',
@@ -208,7 +226,7 @@ const AboutUs = () => {
                         </div>
 
                         <div
-                            className="absolute pointer-events-none"
+                            className="absolute pointer-events-none hidden md:block"
                             style={{
                                 bottom: '15%',
                                 left: '8%',
@@ -227,7 +245,7 @@ const AboutUs = () => {
                         </div>
 
                         <div
-                            className="absolute pointer-events-none"
+                            className="absolute pointer-events-none hidden md:block"
                             style={{
                                 bottom: '12%',
                                 right: '6%',

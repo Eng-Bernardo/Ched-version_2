@@ -265,19 +265,10 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        {/* Side Content */}
-                        <div className="order-1 lg:order-2 space-y-8">
-                            {/* Abstract Image */}
-                            <div className="rounded-3xl overflow-hidden shadow-xl">
-                                <img
-                                    src={contactAbstract}
-                                    alt="Contact Support"
-                                    className="w-full h-64 object-cover"
-                                />
-                            </div>
-
+                        {/* Side Content - Only Why Choose Us */}
+                        <div className="order-1 lg:order-2">
                             {/* Info Card */}
-                            <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 text-white">
+                            <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 text-white sticky top-24">
                                 <h3 className="text-2xl font-bold mb-4">
                                     {t('contact.info.why_title')}
                                 </h3>
@@ -300,15 +291,6 @@ const Contact = () => {
                                         </a>
                                     ))}
                                 </div>
-                            </div>
-
-                            {/* Team Image */}
-                            <div className="rounded-3xl overflow-hidden shadow-xl">
-                                <img
-                                    src={contactTeam}
-                                    alt="Our Team"
-                                    className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-                                />
                             </div>
                         </div>
                     </div>

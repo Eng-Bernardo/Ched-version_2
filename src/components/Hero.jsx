@@ -219,7 +219,10 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                        <button className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all duration-300">
+                        <button
+                            onClick={() => navigate('/portfolio')}
+                            className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all duration-300"
+                        >
                             {t('hero.explore_systems')}
                         </button>
                         <button
