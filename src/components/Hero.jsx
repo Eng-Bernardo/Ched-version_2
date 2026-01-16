@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import homeHero from '../assets/images/home_hero.png';
 
 const Hero = () => {
     const { t } = useLanguage();
@@ -192,10 +193,19 @@ const Hero = () => {
 
     return (
         <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src={homeHero}
+                    alt="Home Hero"
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/70 to-white/60" />
+            </div>
 
             {/* Background Glows */}
-            <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-accent/20 rounded-full blur-[100px]" />
+            <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse z-0" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-accent/20 rounded-full blur-[100px] z-0" />
 
             <div className="container mx-auto px-6 text-center z-10">
                 <motion.div
