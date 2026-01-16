@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
     const { t } = useLanguage();
+    const navigate = useNavigate();
     // Carousel state
     const [currentSlide, setCurrentSlide] = React.useState(0);
     const slides = [
@@ -220,7 +222,10 @@ const Hero = () => {
                         <button className="px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all duration-300">
                             {t('hero.explore_systems')}
                         </button>
-                        <button className="px-8 py-4 bg-white text-dark border border-slate-200 font-semibold rounded-full hover:bg-slate-50 transition-colors">
+                        <button
+                            onClick={() => navigate('/about')}
+                            className="px-8 py-4 bg-white text-dark border border-slate-200 font-semibold rounded-full hover:bg-slate-50 transition-colors"
+                        >
                             {t('hero.about_us')}
                         </button>
                     </div>

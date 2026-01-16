@@ -126,6 +126,73 @@ export const translations = {
             description: "Na vanguarda da IA e do design, somos uma equipe de inovadores apaixonados dedicados a transformar o processo criativo. Nossa missão é capacitar designers e equipes de produto com ferramentas de ponta que aprimoram a criatividade, otimizam fluxos de trabalho e dão vida às ideias mais rápido do que nunca.",
             cta: "Saiba Mais"
         },
+        aboutUs: {
+            hero: {
+                title: "Sobre a CHED LABS",
+                subtitle: "Casa de implementação de sistemas. Transformamos conceitos em ecossistemas digitais estruturados e escaláveis."
+            },
+            whatIs: {
+                title: "O que é CHED LABS",
+                description: "CHED LABS é uma software house e laboratório de sistemas, focada na criação, arquitetura e evolução de produtos digitais e ecossistemas de software.",
+                notAgency: "Não somos uma agência criativa, nem uma empresa de marketing. Somos construtores de sistemas.",
+                operations: "CHED LABS opera como um laboratório de projetos digitais, uma empresa de desenvolvimento de software e aplicações, uma criadora de plataformas e sistemas, e uma holding que possui ecossistemas de software.",
+                mainSystem: "Um dos nossos principais sistemas existentes é o Abaco Finance, uma plataforma de gestão financeira e de ativos."
+            },
+            concept: {
+                title: "Conceito Central",
+                subtitle: "Da ideia ao sistema.",
+                description: "Este conceito representa a essência da CHED LABS: transformar ideias em sistemas reais, estruturados e escaláveis, construídos para o longo prazo."
+            },
+            goals: {
+                title: "Objetivos do Website",
+                intro: "O website da CHED LABS não é um site de agência e não é um funil orientado por vendas.",
+                items: [
+                    "Apresentar posicionamento de forma clara",
+                    "Comunicar visão e capacidade técnica",
+                    "Construir confiança institucional",
+                    "Servir parceiros, investidores e empresas"
+                ]
+            },
+            services: {
+                title: "O que CHED LABS faz",
+                items: [
+                    "Desenvolvimento de sistemas e aplicações",
+                    "Arquitetura de software",
+                    "Plataformas digitais",
+                    "Websites inteligentes e automatizados",
+                    "Produtos digitais proprietários",
+                    "Ecossistemas de software"
+                ]
+            },
+            audience: {
+                title: "Público-Alvo",
+                items: [
+                    "Empresas que precisam de sistemas digitais",
+                    "Fundadores e empreendedores",
+                    "Parceiros de tecnologia",
+                    "Investidores"
+                ]
+            },
+            positioning: {
+                tone: {
+                    title: "Tom de Voz",
+                    description: "Claro, objetivo, técnico, internacional e confiante.",
+                    avoid: "Evitamos linguagem de agência, buzzwords vazias e copy agressivo de vendas."
+                },
+                visual: {
+                    title: "Direção Visual",
+                    items: [
+                        "Fundo escuro (#0B0F14)",
+                        "Gradiente da marca (#4CC9F0 → #5A7CFA → #B517F2)",
+                        "Estilo minimalista, tecnológico, arquitetural"
+                    ]
+                }
+            },
+            summary: {
+                title: "Resumo Final",
+                description: "CHED LABS deve ser percebida como uma empresa de tecnologia real, uma software house estruturada, um laboratório de sistemas, e uma criadora e proprietária de produtos digitais."
+            }
+        },
         contact: {
             hero: {
                 title: "Entre em Contato",
@@ -336,6 +403,73 @@ export const translations = {
             description: "At the forefront of AI and design, we are a team of passionate innovators dedicated to transforming the creative process. Our mission is to empower designers and product teams with cutting-edge tools that enhance creativity, streamline workflows, and bring ideas to life faster than ever before.",
             cta: "Learn More"
         },
+        aboutUs: {
+            hero: {
+                title: "About CHED LABS",
+                subtitle: "System implementation house. We turn concepts into structured, scalable digital ecosystems."
+            },
+            whatIs: {
+                title: "What CHED LABS Is",
+                description: "CHED LABS is a software house and systems lab, focused on the creation, architecture, and evolution of digital products and software ecosystems.",
+                notAgency: "We are not a creative agency, nor a marketing company. We are system builders.",
+                operations: "CHED LABS operates as a digital project lab, a software and application development company, a creator of platforms and systems, and a holding company that owns software ecosystems.",
+                mainSystem: "One of our main existing systems is Abaco Finance, a financial and asset management platform."
+            },
+            concept: {
+                title: "Core Concept",
+                subtitle: "From idea to system.",
+                description: "This concept represents the essence of CHED LABS: turning ideas into real, structured, scalable systems built for the long term."
+            },
+            goals: {
+                title: "Website Goals",
+                intro: "The CHED LABS website is not an agency website and not a sales-driven funnel.",
+                items: [
+                    "Present positioning clearly",
+                    "Communicate vision and technical capability",
+                    "Build institutional trust",
+                    "Serve partners, investors, and companies"
+                ]
+            },
+            services: {
+                title: "What CHED LABS Does",
+                items: [
+                    "System and application development",
+                    "Software architecture",
+                    "Digital platforms",
+                    "Intelligent and automated websites",
+                    "Proprietary digital products",
+                    "Software ecosystems"
+                ]
+            },
+            audience: {
+                title: "Target Audience",
+                items: [
+                    "Companies needing digital systems",
+                    "Founders and entrepreneurs",
+                    "Technology partners",
+                    "Investors"
+                ]
+            },
+            positioning: {
+                tone: {
+                    title: "Tone of Voice",
+                    description: "Clear, objective, technical, international, and confident.",
+                    avoid: "Avoid agency language, empty buzzwords, and aggressive sales copy."
+                },
+                visual: {
+                    title: "Visual Direction",
+                    items: [
+                        "Dark background (#0B0F14)",
+                        "Brand gradient (#4CC9F0 → #5A7CFA → #B517F2)",
+                        "Minimalist, technological, architectural style"
+                    ]
+                }
+            },
+            summary: {
+                title: "Final Summary",
+                description: "CHED LABS must be perceived as a real technology company, a structured software house, a systems laboratory, and a creator and owner of digital products."
+            }
+        },
         contact: {
             hero: {
                 title: "Get in Touch",
@@ -545,6 +679,73 @@ export const translations = {
             title: "Notre Histoire",
             description: "À la pointe de l'IA et du design, nous sommes une équipe d'innovateurs passionnés dédiés à transformer le processus créatif. Notre mission est de donner aux concepteurs et aux équipes de produit les outils de pointe qui améliorent la créativité, rationalisent les flux de travail et donnent vie aux idées plus rapidement que jamais.",
             cta: "En savoir plus"
+        },
+        aboutUs: {
+            hero: {
+                title: "À propos de CHED LABS",
+                subtitle: "Maison d'implémentation de systèmes. Nous transformons des concepts en écosystèmes numériques structurés et évolutifs."
+            },
+            whatIs: {
+                title: "Qu'est-ce que CHED LABS",
+                description: "CHED LABS est une maison de logiciels et un laboratoire de systèmes, axé sur la création, l'architecture et l'évolution de produits numériques et d'écosystèmes logiciels.",
+                notAgency: "Nous ne sommes pas une agence créative, ni une entreprise de marketing. Nous sommes des constructeurs de systèmes.",
+                operations: "CHED LABS fonctionne comme un laboratoire de projets numériques, une entreprise de développement de logiciels et d'applications, un créateur de plateformes et de systèmes, et une société holding possédant des écosystèmes logiciels.",
+                mainSystem: "L'un de nos principaux systèmes existants est Abaco Finance, une plateforme de gestion financière et d'actifs."
+            },
+            concept: {
+                title: "Concept Central",
+                subtitle: "De l'idée au système.",
+                description: "Ce concept représente l'essence de CHED LABS : transformer des idées en systèmes réels, structurés et évolutifs, conçus pour le long terme."
+            },
+            goals: {
+                title: "Objectifs du Site Web",
+                intro: "Le site Web de CHED LABS n'est pas un site d'agence et n'est pas un entonnoir axé sur les ventes.",
+                items: [
+                    "Présenter clairement le positionnement",
+                    "Communiquer la vision et la capacité technique",
+                    "Construire la confiance institutionnelle",
+                    "Servir les partenaires, les investisseurs et les entreprises"
+                ]
+            },
+            services: {
+                title: "Ce que fait CHED LABS",
+                items: [
+                    "Développement de systèmes et d'applications",
+                    "Architecture logicielle",
+                    "Plateformes numériques",
+                    "Sites Web intelligents et automatisés",
+                    "Produits numériques propriétaires",
+                    "Écosystèmes logiciels"
+                ]
+            },
+            audience: {
+                title: "Public Cible",
+                items: [
+                    "Entreprises ayant besoin de systèmes numériques",
+                    "Fondateurs et entrepreneurs",
+                    "Partenaires technologiques",
+                    "Investisseurs"
+                ]
+            },
+            positioning: {
+                tone: {
+                    title: "Ton de Voix",
+                    description: "Clair, objectif, technique, international et confiant.",
+                    avoid: "Éviter le langage d'agence, les mots à la mode vides et le copy agressif de vente."
+                },
+                visual: {
+                    title: "Direction Visuelle",
+                    items: [
+                        "Fond sombre (#0B0F14)",
+                        "Dégradé de marque (#4CC9F0 → #5A7CFA → #B517F2)",
+                        "Style minimaliste, technologique, architectural"
+                    ]
+                }
+            },
+            summary: {
+                title: "Résumé Final",
+                description: "CHED LABS doit être perçue comme une véritable entreprise technologique, une maison de logiciels structurée, un laboratoire de systèmes et un créateur et propriétaire de produits numériques."
+            }
         },
         contact: {
             hero: {
