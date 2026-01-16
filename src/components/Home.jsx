@@ -3,7 +3,7 @@ import AboutSection from './AboutSection';
 import OurStory from './OurStory';
 import GallerySection from './GallerySection';
 import SystemShowcase from './SystemShowcase';
-import WireframeSection from './WireframeSection';
+
 import VariationsSection from './VariationsSection';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
             <OurStory />
             <GallerySection />
             <SystemShowcase />
-            <WireframeSection />
+
             <VariationsSection />
             {/* Soft transition to footer */}
             <div className="h-64 bg-gradient-to-b from-[#F8FAFC] to-[#1E1B4B]" />

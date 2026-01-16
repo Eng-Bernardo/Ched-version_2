@@ -120,36 +120,7 @@ export const translations = {
                 logistics_type: "Sistema Mobile"
             }
         },
-        wireframe: {
-            title: "Gerador de Wireframes IA Gratuito para Design mais Rápido",
-            subtitle: "Nossa ferramenta de wireframing oferece várias funcionalidades pensadas nas suas necessidades de web design",
-            cards: {
-                figma: {
-                    title: "Integrado com Figma",
-                    desc: "Crie wireframes gerados por IA na web ou diretamente no Figma com UX Pilot. Transferência perfeita entre plataformas."
-                },
-                flows: {
-                    title: "Gerar Fluxos de Tela",
-                    desc: "Projete jornadas de usuário intuitivas com facilidade usando nosso Gerador de Wireframe IA. Visualize fluxos completos de produto em minutos, revolucionando seu processo de wireframing e UX."
-                },
-                text: {
-                    title: "Texto para Wireframe",
-                    desc: "Edite e refine seus wireframes gerados por IA simplesmente conversando com nosso UX Pilot IA. Use comandos de linguagem natural para iterar rapidamente em mockups editáveis, fazer ajustes necessários e dar vida às suas ideias de produto."
-                },
-                speed: {
-                    title: "Criar wireframes com velocidade e poder da IA",
-                    desc: "Com o gerador de wireframes IA, qualquer pessoa pode transformar ideias em designs personalizados — sem experiência em design necessária."
-                },
-                mobile: {
-                    title: "Mobile ou Desktop",
-                    desc: "Gere rapidamente wireframes para mobile e desktop com nossa ferramenta gratuita alimentada por IA."
-                },
-                image: {
-                    title: "Imagem para Wireframe em segundos",
-                    desc: "Transforme suas ideias em wireframes estruturados convertendo imagens ou esboços em designs prontos para edição."
-                }
-            }
-        },
+
         ourStory: {
             title: "Nossa História",
             description: "Na vanguarda da IA e do design, somos uma equipe de inovadores apaixonados dedicados a transformar o processo criativo. Nossa missão é capacitar designers e equipes de produto com ferramentas de ponta que aprimoram a criatividade, otimizam fluxos de trabalho e dão vida às ideias mais rápido do que nunca.",
@@ -359,36 +330,7 @@ export const translations = {
                 logistics_type: "Mobile System"
             }
         },
-        wireframe: {
-            title: "Free AI Wireframe Generator for Faster Design",
-            subtitle: "Our wireframing tool offers several features designed for your web design needs",
-            cards: {
-                figma: {
-                    title: "Integrated with Figma",
-                    desc: "Create AI-generated wireframes on the web or directly in Figma with UX Pilot. Seamless transfer between platforms."
-                },
-                flows: {
-                    title: "Generate Screen Flows",
-                    desc: "Project intuitive user journeys with ease using our AI Wireframe Generator. Visualize complete product flows in minutes."
-                },
-                text: {
-                    title: "Text to Wireframe",
-                    desc: "Edit and refine your AI-generated wireframes simply by chatting. Use natural language commands to quickly iterate on editable mockups."
-                },
-                speed: {
-                    title: "Create wireframes with AI speed and power",
-                    desc: "With the AI wireframe generator, anyone can transform ideas into custom designs — no design experience needed."
-                },
-                mobile: {
-                    title: "Mobile or Desktop",
-                    desc: "Quickly generate wireframes for mobile and desktop with our free AI-powered tool."
-                },
-                image: {
-                    title: "Image to Wireframe in seconds",
-                    desc: "Transform your ideas into structured wireframes by converting images or sketches into ready-to-edit designs."
-                }
-            }
-        },
+
         ourStory: {
             title: "Our Story",
             description: "At the forefront of AI and design, we are a team of passionate innovators dedicated to transforming the creative process. Our mission is to empower designers and product teams with cutting-edge tools that enhance creativity, streamline workflows, and bring ideas to life faster than ever before.",
@@ -598,36 +540,7 @@ export const translations = {
                 logistics_type: "Système mobile"
             }
         },
-        wireframe: {
-            title: "Générateur de Wireframes IA Gratuit pour un Design plus Rapide",
-            subtitle: "Notre outil de wireframing offre plusieurs fonctionnalités conçues pour vos besoins en design web",
-            cards: {
-                figma: {
-                    title: "Intégré à Figma",
-                    desc: "Créez des wireframes générés par IA sur le web ou directement dans Figma avec UX Pilot. Transfert transparent entre plateformes."
-                },
-                flows: {
-                    title: "Générer des Flux d'Écran",
-                    desc: "Projetez des parcours utilisateurs intuitifs en toute simplicité. Visualisez des flux de produits complets en quelques minutes."
-                },
-                text: {
-                    title: "Texte vers Wireframe",
-                    desc: "Modifiez et affinez vos wireframes générés par IA en discutant simplement. Utilisez des commandes en langage naturel."
-                },
-                speed: {
-                    title: "Créer des wireframes avec la vitesse et la puissance de l'IA",
-                    desc: "Avec le générateur de wireframes IA, n'importe qui peut transformer des idées en designs personnalisés."
-                },
-                mobile: {
-                    title: "Mobile ou Desktop",
-                    desc: "Générez rapidement des wireframes pour mobile et bureau avec notre outil gratuit alimenté par l'IA."
-                },
-                image: {
-                    title: "Image vers Wireframe en quelques secondes",
-                    desc: "Transformez vos idées en wireframes structurés en convertissant des images ou des croquis."
-                }
-            }
-        },
+
         ourStory: {
             title: "Notre Histoire",
             description: "À la pointe de l'IA et du design, nous sommes une équipe d'innovateurs passionnés dédiés à transformer le processus créatif. Notre mission est de donner aux concepteurs et aux équipes de produit les outils de pointe qui améliorent la créativité, rationalisent les flux de travail et donnent vie aux idées plus rapidement que jamais.",
