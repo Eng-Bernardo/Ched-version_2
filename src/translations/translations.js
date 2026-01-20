@@ -252,23 +252,93 @@ export const translations = {
                 abaco: {
                     title: "Abaco Finance",
                     category: "Fintech",
-                    description: "Uma plataforma abrangente de gestão financeira e de ativos projetada para escala. Sistema completo com dashboard em tempo real, relatórios automáticos e segurança de nível empresarial.",
-                    tech: "React, Node.js, PostgreSQL, AWS",
-                    year: "2024"
+                    description: "Plataforma completa de gestão financeira pessoal que transforma a maneira como você gerencia suas finanças. Com dashboards interativos em tempo real, análise financeira detalhada e gestão inteligente de contas bancárias e investimentos.",
+                    tech: "React, Node.js, PostgreSQL, AWS, Chart.js",
+                    year: "2024",
+                    features: [
+                        "Dashboard Financeiro: Visão consolidada de entradas, saídas, saldo mensal e posição patrimonial com atualização em tempo real",
+                        "Central Financeira: Gestão integrada de múltiplas contas (Binance, Caixa, XP, Nomad) com visualização de saldos e rentabilidade",
+                        "Análise Financeira: Gráficos interativos de fluxo de caixa, patrimônio líquido, receitas e despesas com filtros personalizáveis",
+                        "Gestão de Contas: Organização completa de contas bancárias e investimentos com categorização automática",
+                        "Relatórios Inteligentes: Insights automáticos sobre saúde financeira e taxa de poupança"
+                    ]
+                },
+                dxid: {
+                    title: "DXID Product Solution",
+                    category: "Design & Varejo",
+                    description: "Empresa internacional de design e loja de varejo online com sistema completo de gestão de projetos. Desenvolvemos, fabricamos e distribuímos produtos inovadores para consumidores em todo o mundo através de nossas próprias marcas.",
+                    tech: "React, Node.js, PostgreSQL, Real-time Updates",
+                    year: "2024",
+                    features: [
+                        "Pipeline de Projetos: Sistema de gestão de workflow para rastreamento de projetos desde o conceito até a produção em massa",
+                        "Gestão de Tarefas: Controle completo de tarefas com status, prioridades, prazos e responsáveis",
+                        "Timeline & Observações: Acompanhamento em tempo real do progresso com feedback AI e comentários colaborativos",
+                        "Gestão de Clientes: Organização de clientes, canais e tipos de negócios para cada projeto",
+                        "Portal Seguro: Sistema de autenticação robusto para acesso seguro à plataforma de gestão"
+                    ],
+                    locations: {
+                        brazil: "Curitiba, Brasil",
+                        china1: "Ningbo, Zhejiang, China",
+                        china2: "Jiu Jiang, Jiangxi, China"
+                    },
+                    philosophy: "Desenvolvimento de produtos de 0% a 100%, envolvidos em todas as etapas desde as primeiras ideias e conceitos de design até a produção em massa do produto. Inovação em aspectos funcionais primeiro, bom design e estética bem resolvida são apenas consequências."
+                },
+                portal_dux: {
+                    title: "Portal DUX",
+                    category: "SaaS",
+                    description: "Portal de excelência da fábrica ao consumidor. Sistema completo de comunicação e gestão com chat em tempo real, autenticação segura e soluções de produtos além dos destinos.",
+                    tech: "React, Node.js, WebSocket, Real-time Chat",
+                    year: "2025",
+                    features: [
+                        "Chat em Tempo Real: Sistema de mensagens instantâneas com suporte a anexos e histórico de conversas",
+                        "Portal Seguro: Autenticação robusta com gerenciamento de usuários e permissões",
+                        "Factory-to-Consumer: Conexão direta entre fábrica e consumidor simplificando a cadeia de valor",
+                        "Gestão de Documentos: Compartilhamento e visualização de documentos dentro do chat",
+                        "Interface Responsiva: Design moderno e limpo com experiência otimizada para todos os dispositivos"
+                    ]
+                },
+                portal_cercargo: {
+                    title: "Portal Cercargo",
+                    subtitle: "PromoShare",
+                    category: "Marketing Tech",
+                    description: "Plataforma de publicação automática de promoções em múltiplos canais de comunicação. Sistema completo com busca por IA e notificações personalizadas para maximizar o alcance de ofertas.",
+                    tech: "React, Node.js, AI/ML, Telegram API, WhatsApp API",
+                    year: "2025",
+                    features: [
+                        "Publicação Multi-Canal: Publique promoções automaticamente em múltiplos canais do Telegram e WhatsApp simultaneamente",
+                        "Busca com IA: Utilize inteligência artificial para encontrar produtos com descontos específicos e criar promoções direcionadas",
+                        "Notificações Personalizadas: Sistema inteligente que envia promoções apenas para usuários interessados em categorias específicas",
+                        "Gestão de Preferências: Usuários configuram suas categorias de interesse e recebem apenas promoções relevantes via número privado",
+                        "Dashboard Analítico: Acompanhe métricas de alcance, engajamento e conversão de promoções em tempo real"
+                    ]
                 },
                 saas_analytics: {
                     title: "SaaS Analytics Platform",
                     category: "SaaS",
                     description: "Plataforma analítica avançada para empresas SaaS. Rastreamento de métricas em tempo real, visualizações personalizadas e insights automáticos.",
                     tech: "React, Python, MongoDB, Docker",
-                    year: "2024"
+                    year: "2024",
+                    features: [
+                        "Dashboard em Tempo Real: Visualização completa de KPIs incluindo MRR, taxa de churn, usuários ativos e LTV do cliente",
+                        "Análise de Funil: Rastreamento detalhado de conversões desde visitantes até clientes pagantes com visualizações interativas",
+                        "Métricas Personalizadas: Crie e acompanhe métricas customizadas específicas para seu modelo de negócio",
+                        "Análise de Cohort: Entenda o comportamento de grupos de usuários ao longo do tempo com visualizações avançadas",
+                        "Relatórios Automáticos: Geração e envio automático de relatórios executivos para stakeholders"
+                    ]
                 },
                 logistics_pro: {
                     title: "Logistics Pro",
                     category: "Empresarial",
                     description: "Sistema robusto de gestão logística com rastreamento em tempo real, otimização de rotas e relatórios detalhados de desempenho.",
                     tech: "React Native, Node.js, Redis",
-                    year: "2023"
+                    year: "2023",
+                    features: [
+                        "Rastreamento em Tempo Real: Monitore a localização de todos os veículos e entregas em tempo real com mapas interativos",
+                        "Otimização de Rotas: Algoritmos inteligentes que calculam as rotas mais eficientes economizando tempo e combustível",
+                        "App Mobile para Motoristas: Aplicativo nativo para motoristas com navegação, prova de entrega e comunicação direta",
+                        "Gestão de Entregas: Sistema completo de gerenciamento de pedidos, status e ETAs com notificações automáticas",
+                        "Relatórios de Performance: Análise detalhada de métricas como taxa de entrega no prazo, distância percorrida e produtividade"
+                    ]
                 }
             },
             cta: {
@@ -534,23 +604,93 @@ export const translations = {
                 abaco: {
                     title: "Abaco Finance",
                     category: "Fintech",
-                    description: "A comprehensive financial and asset management platform designed for scale. Complete system with real-time dashboard, automated reporting, and enterprise-grade security.",
-                    tech: "React, Node.js, PostgreSQL, AWS",
-                    year: "2024"
+                    description: "Complete personal financial management platform that transforms how you manage your finances. Features interactive real-time dashboards, detailed financial analysis, and intelligent management of bank accounts and investments.",
+                    tech: "React, Node.js, PostgreSQL, AWS, Chart.js",
+                    year: "2024",
+                    features: [
+                        "Financial Dashboard: Consolidated view of income, expenses, monthly balance, and net worth with real-time updates",
+                        "Financial Hub: Integrated management of multiple accounts (Binance, Caixa, XP, Nomad) with balance and profitability visualization",
+                        "Financial Analysis: Interactive cash flow, net worth, income and expense charts with customizable filters",
+                        "Account Management: Complete organization of bank accounts and investments with automatic categorization",
+                        "Smart Reports: Automatic insights on financial health and savings rate"
+                    ]
+                },
+                dxid: {
+                    title: "DXID Product Solution",
+                    category: "Design & Retail",
+                    description: "International design company and online retail store with complete project management system. We develop, manufacture, and distribute innovative products to consumers worldwide through our own brands.",
+                    tech: "React, Node.js, PostgreSQL, Real-time Updates",
+                    year: "2024",
+                    features: [
+                        "Project Pipeline: Workflow management system for tracking projects from concept to mass production",
+                        "Task Management: Complete task control with status, priorities, deadlines, and assignees",
+                        "Timeline & Observations: Real-time progress tracking with AI feedback and collaborative comments",
+                        "Client Management: Organization of clients, channels, and business types for each project",
+                        "Secure Portal: Robust authentication system for secure access to the management platform"
+                    ],
+                    locations: {
+                        brazil: "Curitiba, Brazil",
+                        china1: "Ningbo, Zhejiang, China",
+                        china2: "Jiu Jiang, Jiangxi, China"
+                    },
+                    philosophy: "Product development from 0% to 100%, involved in all steps from the first ideas and design concepts to mass production. Functional aspects innovation first, good design and well-solved aesthetics are just consequences."
+                },
+                portal_dux: {
+                    title: "Portal DUX",
+                    category: "SaaS",
+                    description: "Factory-to-consumer excellence portal. Complete communication and management system with real-time chat, secure authentication, and product solutions beyond destinations.",
+                    tech: "React, Node.js, WebSocket, Real-time Chat",
+                    year: "2025",
+                    features: [
+                        "Real-time Chat: Instant messaging system with file attachment support and conversation history",
+                        "Secure Portal: Robust authentication with user management and permissions",
+                        "Factory-to-Consumer: Direct connection between factory and consumer simplifying the value chain",
+                        "Document Management: Document sharing and viewing within chat interface",
+                        "Responsive Interface: Modern, clean design with optimized experience across all devices"
+                    ]
+                },
+                portal_cercargo: {
+                    title: "Portal Cercargo",
+                    subtitle: "PromoShare",
+                    category: "Marketing Tech",
+                    description: "Automated promotion publishing platform across multiple communication channels. Complete system with AI search and personalized notifications to maximize offer reach.",
+                    tech: "React, Node.js, AI/ML, Telegram API, WhatsApp API",
+                    year: "2025",
+                    features: [
+                        "Multi-Channel Publishing: Automatically publish promotions across multiple Telegram and WhatsApp channels simultaneously",
+                        "AI-Powered Search: Use artificial intelligence to find products with specific discounts and create targeted promotions",
+                        "Personalized Notifications: Smart system that sends promotions only to users interested in specific categories",
+                        "Preference Management: Users configure their interest categories and receive only relevant promotions via private number",
+                        "Analytics Dashboard: Track reach, engagement, and conversion metrics of promotions in real-time"
+                    ]
                 },
                 saas_analytics: {
                     title: "SaaS Analytics Platform",
                     category: "SaaS",
                     description: "Advanced analytics platform for SaaS companies. Real-time metrics tracking, customizable visualizations, and automated insights.",
                     tech: "React, Python, MongoDB, Docker",
-                    year: "2024"
+                    year: "2024",
+                    features: [
+                        "Real-time Dashboard: Complete KPI visualization including MRR, churn rate, active users, and customer LTV",
+                        "Funnel Analysis: Detailed conversion tracking from visitors to paying customers with interactive visualizations",
+                        "Custom Metrics: Create and track customized metrics specific to your business model",
+                        "Cohort Analysis: Understand user group behavior over time with advanced visualizations",
+                        "Automated Reports: Automatic generation and sending of executive reports to stakeholders"
+                    ]
                 },
                 logistics_pro: {
                     title: "Logistics Pro",
                     category: "Enterprise",
                     description: "Robust logistics management system with real-time tracking, route optimization, and detailed performance reporting.",
                     tech: "React Native, Node.js, Redis",
-                    year: "2023"
+                    year: "2023",
+                    features: [
+                        "Real-time Tracking: Monitor all vehicles and deliveries in real-time with interactive maps",
+                        "Route Optimization: Smart algorithms that calculate the most efficient routes saving time and fuel",
+                        "Driver Mobile App: Native app for drivers with navigation, proof of delivery, and direct communication",
+                        "Delivery Management: Complete order management system with status tracking and automated ETAs",
+                        "Performance Reports: Detailed metrics analysis including on-time delivery rate, distance covered, and productivity"
+                    ]
                 }
             },
             cta: {
@@ -816,23 +956,93 @@ export const translations = {
                 abaco: {
                     title: "Abaco Finance",
                     category: "Fintech",
-                    description: "Une plateforme complète de gestion financière et d'actifs conçue pour l'évolution. Système complet avec tableau de bord en temps réel, rapports automatisés et sécurité de niveau entreprise.",
-                    tech: "React, Node.js, PostgreSQL, AWS",
-                    year: "2024"
+                    description: "Plateforme complète de gestion financière personnelle qui transforme la façon dont vous gérez vos finances. Avec des tableaux de bord interactifs en temps réel, une analyse financière détaillée et une gestion intelligente des comptes bancaires et investissements.",
+                    tech: "React, Node.js, PostgreSQL, AWS, Chart.js",
+                    year: "2024",
+                    features: [
+                        "Tableau de Bord Financier: Vue consolidée des revenus, dépenses, solde mensuel et patrimoine net avec mises à jour en temps réel",
+                        "Hub Financier: Gestion intégrée de plusieurs comptes (Binance, Caixa, XP, Nomad) avec visualisation des soldes et rentabilité",
+                        "Analyse Financière: Graphiques interactifs de flux de trésorerie, patrimoine net, revenus et dépenses avec filtres personnalisables",
+                        "Gestion des Comptes: Organisation complète des comptes bancaires et investissements avec catégorisation automatique",
+                        "Rapports Intelligents: Insights automatiques sur la santé financière et le taux d'épargne"
+                    ]
+                },
+                dxid: {
+                    title: "DXID Product Solution",
+                    category: "Design & Vente au Détail",
+                    description: "Entreprise de design internationale et magasin de vente au détail en ligne avec système complet de gestion de projets. Nous développons, fabriquons et distribuons des produits innovants aux consommateurs du monde entier via nos propres marques.",
+                    tech: "React, Node.js, PostgreSQL, Mises à jour en temps réel",
+                    year: "2024",
+                    features: [
+                        "Pipeline de Projets: Système de gestion de workflow pour le suivi des projets du concept à la production de masse",
+                        "Gestion des Tâches: Contrôle complet des tâches avec statut, priorités, échéances et responsables",
+                        "Chronologie & Observations: Suivi en temps réel de la progression avec retours AI et commentaires collaboratifs",
+                        "Gestion des Clients: Organisation des clients, canaux et types d'affaires pour chaque projet",
+                        "Portail Sécurisé: Système d'authentification robuste pour un accès sécurisé à la plateforme de gestion"
+                    ],
+                    locations: {
+                        brazil: "Curitiba, Brésil",
+                        china1: "Ningbo, Zhejiang, Chine",
+                        china2: "Jiu Jiang, Jiangxi, Chine"
+                    },
+                    philosophy: "Développement de produits de 0% à 100%, impliqués dans toutes les étapes depuis les premières idées et concepts de design jusqu'à la production de masse. Innovation des aspects fonctionnels d'abord, bon design et esthétique bien résolue sont juste des conséquences."
+                },
+                portal_dux: {
+                    title: "Portal DUX",
+                    category: "SaaS",
+                    description: "Portail d'excellence de l'usine au consommateur. Système complet de communication et de gestion avec chat en temps réel, authentification sécurisée et solutions de produits au-delà des destinations.",
+                    tech: "React, Node.js, WebSocket, Chat en temps réel",
+                    year: "2025",
+                    features: [
+                        "Chat en Temps Réel: Système de messagerie instantanée avec prise en charge des pièces jointes et historique des conversations",
+                        "Portail Sécurisé: Authentification robuste avec gestion des utilisateurs et des permissions",
+                        "Usine-vers-Consommateur: Connexion directe entre l'usine et le consommateur simplifiant la chaîne de valeur",
+                        "Gestion des Documents: Partage et visualisation de documents dans l'interface de chat",
+                        "Interface Réactive: Design moderne et épuré avec expérience optimisée sur tous les appareils"
+                    ]
+                },
+                portal_cercargo: {
+                    title: "Portal Cercargo",
+                    subtitle: "PromoShare",
+                    category: "Marketing Tech",
+                    description: "Plateforme de publication automatique de promotions sur plusieurs canaux de communication. Système complet avec recherche IA et notifications personnalisées pour maximiser la portée des offres.",
+                    tech: "React, Node.js, IA/ML, API Telegram, API WhatsApp",
+                    year: "2025",
+                    features: [
+                        "Publication Multi-Canaux: Publiez automatiquement des promotions sur plusieurs canaux Telegram et WhatsApp simultanément",
+                        "Recherche par IA: Utilisez l'intelligence artificielle pour trouver des produits avec des réductions spécifiques et créer des promotions ciblées",
+                        "Notifications Personnalisées: Système intelligent qui envoie des promotions uniquement aux utilisateurs intéressés par des catégories spécifiques",
+                        "Gestion des Préférences: Les utilisateurs configurent leurs catégories d'intérêt et reçoivent uniquement des promotions pertinentes via numéro privé",
+                        "Tableau de Bord Analytique: Suivez les métriques de portée, d'engagement et de conversion des promotions en temps réel"
+                    ]
                 },
                 saas_analytics: {
                     title: "Plateforme d'Analyse SaaS",
                     category: "SaaS",
                     description: "Plateforme d'analyse avancée pour les entreprises SaaS. Suivi des métriques en temps réel, visualisations personnalisables et insights automatisés.",
                     tech: "React, Python, MongoDB, Docker",
-                    year: "2024"
+                    year: "2024",
+                    features: [
+                        "Tableau de Bord en Temps Réel: Visualisation complète des KPI incluant MRR, taux de désabonnement, utilisateurs actifs et LTV client",
+                        "Analyse d'Entonnoir: Suivi détaillé des conversions des visiteurs aux clients payants avec visualisations interactives",
+                        "Métriques Personnalisées: Créez et suivez des métriques personnalisées spécifiques à votre modèle commercial",
+                        "Analyse de Cohorte: Comprenez le comportement des groupes d'utilisateurs dans le temps avec visualisations avancées",
+                        "Rapports Automatisés: Génération et envoi automatiques de rapports exécutifs aux parties prenantes"
+                    ]
                 },
                 logistics_pro: {
                     title: "Logistics Pro",
                     category: "Entreprise",
                     description: "Système de gestion logistique robuste avec suivi en temps réel, optimisation des itinéraires et rapports de performance détaillés.",
                     tech: "React Native, Node.js, Redis",
-                    year: "2023"
+                    year: "2023",
+                    features: [
+                        "Suivi en Temps Réel: Surveillez tous les véhicules et livraisons en temps réel avec des cartes interactives",
+                        "Optimisation d'Itinéraire: Algorithmes intelligents qui calculent les routes les plus efficaces économisant temps et carburant",
+                        "Application Mobile Conducteur: Application native pour conducteurs avec navigation, preuve de livraison et communication directe",
+                        "Gestion des Livraisons: Système complet de gestion des commandes avec suivi de statut et ETAs automatisés",
+                        "Rapports de Performance: Analyse détaillée des métriques comme taux de livraison ponctuelle, distance parcourue et productivité"
+                    ]
                 }
             },
             cta: {

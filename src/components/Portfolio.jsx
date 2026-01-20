@@ -6,20 +6,41 @@ import { Link } from 'react-router-dom';
 
 // Import project images
 import dashboardImg from '../assets/images/dashboard_dark_analytics_1768301257210.png';
-import fintechImg from '../assets/images/fintech_asset_management_1768301273170.png';
+import abacoDashboard from '/assets/images/abaco_dashboard.jpg';
+import abacoAnalysis from '/assets/images/abaco_analysis.jpg';
+import abacoAccounts from '/assets/images/abaco_accounts.jpg';
 import mobileImg from '../assets/images/mobile_logistics_app_1768301288673.png';
 import portfolioHero from '../assets/images/portfolio_hero.png';
 
 const Portfolio = () => {
     const { t } = useLanguage();
     const [activeCategory, setActiveCategory] = useState('all');
+    const [carouselIndexes, setCarouselIndexes] = useState({});
 
     const projects = [
         {
             id: 'abaco',
-            image: fintechImg,
+            images: [abacoDashboard, abacoAnalysis, abacoAccounts],
             category: 'fintech',
             data: t('portfolio.projects.abaco')
+        },
+        {
+            id: 'dxid',
+            image: '/assets/images/dxid_custom.png',
+            category: 'enterprise',
+            data: t('portfolio.projects.dxid')
+        },
+        {
+            id: 'portal_dux',
+            image: '/assets/images/dux_custom.png',
+            category: 'saas',
+            data: t('portfolio.projects.portal_dux')
+        },
+        {
+            id: 'portal_cercargo',
+            image: '/assets/images/cercargo_dashboard.png',
+            category: 'saas',
+            data: t('portfolio.projects.portal_cercargo')
         },
         {
             id: 'saas_analytics',
@@ -120,13 +141,43 @@ const Portfolio = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
                             >
-                                {/* Project Image - Fixed Height */}
+                                {/* Project Image/Carousel - Fixed Height */}
                                 <div className="relative h-56 overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50 flex-shrink-0">
-                                    <img
-                                        src={project.image}
-                                        alt={project.data.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                    />
+                                    {project.images ? (
+                                        // Multiple images - Carousel
+                                        <>
+                                            {project.images.map((img, imgIndex) => (
+                                                <img
+                                                    key={imgIndex}
+                                                    src={img}
+                                                    alt={`${project.data.title} - ${imgIndex + 1}`}
+                                                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${(carouselIndexes[project.id] || 0) === imgIndex ? 'opacity-100' : 'opacity-0'
+                                                        }`}
+                                                />
+                                            ))}
+                                            {/* Carousel Navigation Dots */}
+                                            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                                                {project.images.map((_, imgIndex) => (
+                                                    <button
+                                                        key={imgIndex}
+                                                        onClick={() => setCarouselIndexes(prev => ({ ...prev, [project.id]: imgIndex }))}
+                                                        className={`w-2 h-2 rounded-full transition-all duration-300 ${(carouselIndexes[project.id] || 0) === imgIndex
+                                                            ? 'bg-white w-6'
+                                                            : 'bg-white/50 hover:bg-white/75'
+                                                            }`}
+                                                        aria-label={`View image ${imgIndex + 1}`}
+                                                    />
+                                                ))}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        // Single image
+                                        <img
+                                            src={project.image}
+                                            alt={project.data.title}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                        />
+                                    )}
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                     {/* Category Badge */}
@@ -165,10 +216,60 @@ const Portfolio = () => {
 
                                     {/* Action Button - Push to bottom */}
                                     <div className="mt-auto">
-                                        <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm">
-                                            <ExternalLink className="w-4 h-4" />
-                                            {t('portfolio.view_project')}
-                                        </button>
+                                        {project.id === 'abaco' ? (
+                                            <Link
+                                                to="/case-studies/abaco-finance"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : project.id === 'dxid' ? (
+                                            <Link
+                                                to="/case-studies/dxid"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : project.id === 'portal_dux' ? (
+                                            <Link
+                                                to="/case-studies/portal-dux"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : project.id === 'portal_cercargo' ? (
+                                            <Link
+                                                to="/case-studies/portal-cercargo"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : project.id === 'saas_analytics' ? (
+                                            <Link
+                                                to="/case-studies/saas-analytics"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : project.id === 'logistics_pro' ? (
+                                            <Link
+                                                to="/case-studies/logistics-pro"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
+                                        ) : (
+                                            <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm">
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.view_project')}
+                                            </button>
+                                        )}
                                     </div>
                                 </div>
                             </motion.div>
