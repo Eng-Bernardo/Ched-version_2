@@ -11,46 +11,56 @@ const Hero = () => {
     const [currentSlide, setCurrentSlide] = React.useState(0);
     const slides = [
         {
-            id: 'arch',
+            id: 'architecture',
             label: t('hero.slides.arch_label'),
             sub: t('hero.slides.arch_sub'),
             content: (
-                <div className="relative w-full h-full flex items-center justify-center bg-blue-50/50">
-                    <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-                    <div className="relative w-80 h-64">
-                        <motion.svg viewBox="0 0 400 300" className="w-full h-full overflow-visible">
-                            {/* Isometric Grid Base */}
-                            <motion.path
-                                d="M200 50 L350 150 L200 250 L50 150 Z"
-                                fill="none" stroke="#e2e8f0" strokeWidth="2"
-                                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}
-                            />
-                            {/* Layers Building Up */}
-                            {[0, 1, 2].map((i) => (
-                                <motion.g key={i}
-                                    initial={{ y: -50, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: i * 0.8, duration: 1.5, type: "spring" }}
-                                >
-                                    {/* Isometric Block */}
-                                    <path d={`M200 ${100 + i * 40} L280 ${140 + i * 40} L200 ${180 + i * 40} L120 ${140 + i * 40} Z`}
-                                        fill={i === 0 ? "#3b82f6" : i === 1 ? "#60a5fa" : "#93c5fd"}
-                                        opacity="0.9"
-                                        className="drop-shadow-lg"
+                <div className="relative w-full h-full flex items-center justify-center">
+                    {/* The Architecture - Network/Server Illustration */}
+                    <svg className="w-4/5 h-4/5 animate-float" viewBox="0 0 400 300" fill="none">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={{ stopColor: '#667eea', stopOpacity: 1 }} />
+                                <stop offset="100%" style={{ stopColor: '#764ba2', stopOpacity: 1 }} />
+                            </linearGradient>
+                        </defs>
+                        {/* Central Server */}
+                        <motion.rect
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ delay: 0.2, type: "spring" }}
+                            x="170" y="120" width="60" height="60" rx="8" fill="url(#grad1)" opacity="0.9"
+                        />
+                        {/* Connection Lines */}
+                        {[0, 1, 2, 3, 4, 5].map((i) => {
+                            const angle = (i * 60) * Math.PI / 180;
+                            const x = 200 + Math.cos(angle) * 100;
+                            const y = 150 + Math.sin(angle) * 80;
+                            return (
+                                <motion.g key={i}>
+                                    <motion.line
+                                        initial={{ pathLength: 0 }}
+                                        animate={{ pathLength: 1 }}
+                                        transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
+                                        x1="200" y1="150" x2={x} y2={y}
+                                        stroke="#667eea" strokeWidth="2" opacity="0.3"
                                     />
-                                    <path d={`M120 ${140 + i * 40} L200 ${180 + i * 40} L200 ${200 + i * 40} L120 ${160 + i * 40} Z`} fill={i === 0 ? "#1d4ed8" : "#2563eb"} opacity="0.6" />
-                                    <path d={`M280 ${140 + i * 40} L200 ${180 + i * 40} L200 ${200 + i * 40} L280 ${160 + i * 40} Z`} fill={i === 0 ? "#1e40af" : "#1d4ed8"} opacity="0.4" />
+                                    <motion.circle
+                                        initial={{ scale: 0 }}
+                                        animate={{ scale: 1 }}
+                                        transition={{ delay: 0.5 + i * 0.1 }}
+                                        cx={x} cy={y} r="15" fill="#764ba2" opacity="0.8"
+                                    />
                                 </motion.g>
-                            ))}
-
-                            {/* Connection Lines (Pipes) */}
-                            <motion.path
-                                d="M200 100 L200 220"
-                                stroke="white" strokeWidth="2" strokeDasharray="4 4"
-                                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 2.5, duration: 2 }}
-                            />
-                        </motion.svg>
-                    </div>
+                            );
+                        })}
+                        {/* Pulsing Rings */}
+                        <motion.circle
+                            animate={{ r: [60, 80, 60], opacity: [0.3, 0, 0.3] }}
+                            transition={{ repeat: Infinity, duration: 2 }}
+                            cx="200" cy="150" r="60" stroke="#667eea" strokeWidth="2" fill="none"
+                        />
+                    </svg>
                 </div>
             )
         },
@@ -59,60 +69,53 @@ const Hero = () => {
             label: t('hero.slides.idea_label'),
             sub: t('hero.slides.idea_sub'),
             content: (
-                <div className="relative w-full h-full flex items-center justify-center bg-orange-50/50">
-                    <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-                    {/* Illustrated Lamp / Bulb */}
-                    <div className="relative w-64 h-64">
-                        <motion.svg viewBox="0 0 200 200" className="w-full h-full drop-shadow-xl overflow-visible">
-                            {/* Glow */}
-                            <motion.circle cx="100" cy="100" r="60" fill="url(#glowGradient)"
-                                animate={{ opacity: [0.5, 0.8, 0.5], scale: [1, 1.1, 1] }}
-                                transition={{ duration: 6, repeat: Infinity }}
-                            />
-                            <defs>
-                                <radialGradient id="glowGradient" cx="0.5" cy="0.5" r="0.5">
-                                    <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.4" />
-                                    <stop offset="100%" stopColor="#fbbf24" stopOpacity="0" />
-                                </radialGradient>
-                            </defs>
-
-                            {/* Floating Bulb Shape (Abstract) */}
-                            <motion.path
-                                d="M100 160 C 130 160, 150 130, 150 100 C 150 60, 130 40, 100 40 C 70 40, 50 60, 50 100 C 50 130, 70 160, 100 160 Z"
-                                fill="#fff" stroke="#f59e0b" strokeWidth="3"
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                            />
-                            {/* Filament */}
-                            <motion.path
-                                d="M85 100 L 100 80 L 115 100"
-                                fill="none" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-                                animate={{ pathLength: [0, 1], opacity: [0, 1] }}
-                                transition={{ duration: 2, delay: 0.5 }}
-                            />
-                            {/* Base */}
-                            <motion.rect x="85" y="160" width="30" height="10" rx="2" fill="#475569"
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                            />
-                            <motion.rect x="88" y="172" width="24" height="6" rx="1" fill="#475569"
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                            />
-
-                            {/* Sparks / Ideas */}
-                            {[...Array(5)].map((_, i) => (
-                                <motion.g key={i}
-                                    initial={{ opacity: 0, scale: 0 }}
-                                    animate={{ opacity: [0, 1, 0], scale: [0, 1, 0], x: Math.random() * 100 - 50, y: Math.random() * 100 - 50 }}
-                                    transition={{ duration: 4, delay: i * 1, repeat: Infinity }}
-                                >
-                                    <path d="M100 100 L100 90" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" transform={`rotate(${i * 72} 100 100) translate(0 -60)`} />
-                                    <circle cx="100" cy="100" r="3" fill="#fbbf24" transform={`rotate(${i * 72} 100 100) translate(0 -65)`} />
-                                </motion.g>
-                            ))}
-                        </motion.svg>
-                    </div>
+                <div className="relative w-full h-full flex items-center justify-center">
+                    {/* The Idea - Lightbulb with connections */}
+                    <svg className="w-4/5 h-4/5 animate-float" viewBox="0 0 400 300" fill="none">
+                        <defs>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style={{ stopColor: '#f093fb', stopOpacity: 1 }} />
+                                <stop offset="100%" style={{ stopColor: '#f5576c', stopOpacity: 1 }} />
+                            </linearGradient>
+                        </defs>
+                        {/* Lightbulb */}
+                        <motion.ellipse
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ delay: 0.2, type: "spring" }}
+                            cx="200" cy="120" rx="40" ry="50" fill="url(#grad2)" opacity="0.8"
+                        />
+                        <motion.rect
+                            initial={{ scaleY: 0 }}
+                            animate={{ scaleY: 1 }}
+                            transition={{ delay: 0.4 }}
+                            x="185" y="160" width="30" height="20" rx="4" fill="#667eea" opacity="0.9"
+                        />
+                        <motion.rect
+                            initial={{ scaleY: 0 }}
+                            animate={{ scaleY: 1 }}
+                            transition={{ delay: 0.5 }}
+                            x="190" y="175" width="20" height="15" rx="2" fill="#667eea" opacity="0.7"
+                        />
+                        {/* Idea rays */}
+                        {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => {
+                            const rad = angle * Math.PI / 180;
+                            const x1 = 200 + Math.cos(rad) * 55;
+                            const y1 = 120 + Math.sin(rad) * 65;
+                            const x2 = 200 + Math.cos(rad) * 75;
+                            const y2 = 120 + Math.sin(rad) * 85;
+                            return (
+                                <motion.line
+                                    key={i}
+                                    initial={{ pathLength: 0, opacity: 0 }}
+                                    animate={{ pathLength: 1, opacity: [0, 1, 0] }}
+                                    transition={{ delay: 0.6 + i * 0.1, duration: 1, repeat: Infinity, repeatDelay: 1 }}
+                                    x1={x1} y1={y1} x2={x2} y2={y2}
+                                    stroke="#f5576c" strokeWidth="3" strokeLinecap="round"
+                                />
+                            );
+                        })}
+                    </svg>
                 </div>
             )
         },
@@ -121,64 +124,58 @@ const Hero = () => {
             label: t('hero.slides.system_label'),
             sub: t('hero.slides.system_sub'),
             content: (
-                <div className="relative w-full h-full flex items-center justify-center bg-purple-50/50 overflow-hidden">
-                    <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-
-                    {/* Isometric Devices Composition */}
-                    <div className="relative w-[500px] h-[400px]">
-                        {/* Background Laptop */}
-                        <motion.div
-                            initial={{ y: 50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1.5 }}
-                            className="absolute top-10 left-10 w-80 h-56 bg-white rounded-xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden transform -rotate-6 hover:-rotate-3 transition-transform duration-700"
-                        >
-                            <div className="h-6 bg-slate-100 border-b border-slate-200 flex items-center px-2 gap-1">
-                                <div className="w-2 h-2 rounded-full bg-red-400" />
-                                <div className="w-2 h-2 rounded-full bg-yellow-400" />
-                                <div className="w-2 h-2 rounded-full bg-green-400" />
-                            </div>
-                            <div className="flex-1 bg-slate-50 p-4 grid grid-cols-2 gap-4">
-                                <div className="bg-slate-200 rounded h-20 animate-pulse delay-75" />
-                                <div className="bg-slate-200 rounded h-20 animate-pulse delay-150" />
-                                <div className="col-span-2 bg-slate-200 rounded h-20 animate-pulse" />
-                            </div>
-                        </motion.div>
-
-                        {/* Foreground Phone */}
-                        <motion.div
-                            initial={{ y: 100, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1.5, delay: 0.5 }}
-                            className="absolute bottom-10 right-20 w-32 h-64 bg-dark rounded-[2rem] shadow-2xl border-4 border-slate-800 flex flex-col overflow-hidden transform rotate-12 hover:rotate-6 transition-transform duration-700 z-10"
-                        >
-                            <div className="h-full bg-dark/90 relative">
-                                {/* Screen Content */}
-                                <div className="absolute top-8 left-2 right-2 bottom-2 bg-white rounded-xl overflow-hidden p-2">
-                                    <div className="w-8 h-8 bg-primary rounded-lg mb-2" />
-                                    <div className="w-full h-2 bg-slate-100 rounded mb-1" />
-                                    <div className="w-2/3 h-2 bg-slate-100 rounded mb-4" />
-                                    <div className="space-y-2">
-                                        <div className="w-full h-10 bg-primary/10 rounded border border-primary/20" />
-                                        <div className="w-full h-10 bg-primary/10 rounded border border-primary/20" />
-                                    </div>
-                                </div>
-                                {/* Notch */}
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-6 bg-dark rounded-b-xl" />
-                            </div>
-                        </motion.div>
-
-                        {/* Floating Notification Badge */}
-                        <motion.div
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{ delay: 2, type: "spring" }}
-                            className="absolute top-40 right-10 bg-white px-4 py-2 rounded-full shadow-xl border border-slate-100 flex items-center gap-2 z-20"
-                        >
-                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                            <span className="text-xs font-bold text-slate-700">{t('hero.slides.system_status')}</span>
-                        </motion.div>
-                    </div>
+                <div className="relative w-full h-full flex items-center justify-center">
+                    {/* The System - Interconnected Boxes */}
+                    <svg className="w-4/5 h-4/5 animate-float" viewBox="0 0 400 300" fill="none">
+                        <defs>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style={{ stopColor: '#4facfe', stopOpacity: 1 }} />
+                                <stop offset="100%" style={{ stopColor: '#00f2fe', stopOpacity: 1 }} />
+                            </linearGradient>
+                        </defs>
+                        {/* Grid of connected boxes */}
+                        {[0, 1, 2].map((row) =>
+                            [0, 1, 2].map((col) => {
+                                const x = 100 + col * 100;
+                                const y = 80 + row * 70;
+                                return (
+                                    <motion.g key={`${row}-${col}`}>
+                                        <motion.rect
+                                            initial={{ scale: 0, rotate: -180 }}
+                                            animate={{ scale: 1, rotate: 0 }}
+                                            transition={{ delay: 0.1 * (row + col), type: "spring" }}
+                                            x={x} y={y} width="50" height="50" rx="8"
+                                            fill="url(#grad3)" opacity="0.8"
+                                        />
+                                        {col < 2 && (
+                                            <motion.line
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1 }}
+                                                transition={{ delay: 0.5 + row * 0.2 }}
+                                                x1={x + 50} y1={y + 25} x2={x + 100} y2={y + 25}
+                                                stroke="#4facfe" strokeWidth="2" opacity="0.5"
+                                            />
+                                        )}
+                                        {row < 2 && (
+                                            <motion.line
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1 }}
+                                                transition={{ delay: 0.5 + col * 0.2 }}
+                                                x1={x + 25} y1={y + 50} x2={x + 25} y2={y + 70}
+                                                stroke="#00f2fe" strokeWidth="2" opacity="0.5"
+                                            />
+                                        )}
+                                    </motion.g>
+                                );
+                            })
+                        )}
+                        {/* Data flow particles */}
+                        <motion.circle
+                            animate={{ cx: [100, 400], opacity: [0, 1, 0] }}
+                            transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+                            cy="105" r="4" fill="#00f2fe"
+                        />
+                    </svg>
                 </div>
             )
         }

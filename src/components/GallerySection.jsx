@@ -3,21 +3,21 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 // Import images directly (Vite will handle the paths)
-import dashboardImg from '../assets/images/dashboard_dark_analytics_1768301257210.png';
-import fintechImg from '../assets/images/fintech_asset_management_1768301273170.png';
-import mobileImg from '../assets/images/mobile_logistics_app_1768301288673.png';
+import abacoFinanceImg from '../assets/images/abaco_finance_analysis.jpg';
+import cercargoImg from '../assets/images/cercargo_billing.jpg';
+import promoshareImg from '../assets/images/promoshare_categories.jpg';
 
 const GallerySection = () => {
     const { t } = useLanguage();
 
     const galleryItems = [
-        { img: dashboardImg, title: t('gallery.items.saas_title'), type: t('gallery.items.saas_type') },
-        { img: fintechImg, title: t('gallery.items.fintech_title'), type: t('gallery.items.fintech_type') },
-        { img: mobileImg, title: t('gallery.items.logistics_title'), type: t('gallery.items.logistics_type') },
+        { img: abacoFinanceImg, title: t('gallery.items.fintech_title'), type: t('gallery.items.fintech_type') },
+        { img: cercargoImg, title: 'Portal Cercargo', type: 'Marketing Tech' },
+        { img: promoshareImg, title: 'PromoShare', type: 'Marketing Tech' },
         // Duplicate for infinite scroll effect
-        { img: dashboardImg, title: t('gallery.items.saas_title'), type: t('gallery.items.saas_type') },
-        { img: fintechImg, title: t('gallery.items.fintech_title'), type: t('gallery.items.fintech_type') },
-        { img: mobileImg, title: t('gallery.items.logistics_title'), type: t('gallery.items.logistics_type') },
+        { img: abacoFinanceImg, title: t('gallery.items.fintech_title'), type: t('gallery.items.fintech_type') },
+        { img: cercargoImg, title: 'Portal Cercargo', type: 'Marketing Tech' },
+        { img: promoshareImg, title: 'PromoShare', type: 'Marketing Tech' },
     ];
 
     return (
