@@ -12,7 +12,7 @@ import CaseStudyPortalDUX from './components/CaseStudyPortalDUX';
 import CaseStudyPromoShare from './components/CaseStudyPromoShare';
 import CaseStudyPortalCercargo from './components/CaseStudyPortalCercargo';
 import CaseStudySaaS from './components/CaseStudySaaS';
-import CaseStudyLogistics from './components/CaseStudyLogistics';
+
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
             <Route path="/case-studies/promoshare" element={<CaseStudyPromoShare />} />
             <Route path="/case-studies/portal-cercargo" element={<CaseStudyPortalCercargo />} />
             <Route path="/case-studies/saas-analytics" element={<CaseStudySaaS />} />
-            <Route path="/case-studies/logistics-pro" element={<CaseStudyLogistics />} />
+
           </Routes>
         </main>
         <Footer />

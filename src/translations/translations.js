@@ -116,8 +116,7 @@ export const translations = {
                 saas_type: "Dashboard",
                 fintech_title: "Gestão de Ativos",
                 fintech_type: "Plataforma Fintech",
-                logistics_title: "Logistics Pro",
-                logistics_type: "Sistema Mobile"
+
             }
         },
 
@@ -341,20 +340,7 @@ export const translations = {
                         "Relatórios Automáticos: Geração e envio automático de relatórios executivos para stakeholders"
                     ]
                 },
-                logistics_pro: {
-                    title: "Logistics Pro",
-                    category: "Empresarial",
-                    description: "Sistema robusto de gestão logística com rastreamento em tempo real, otimização de rotas e relatórios detalhados de desempenho.",
-                    tech: "React Native, Node.js, Redis",
-                    year: "2023",
-                    features: [
-                        "Rastreamento em Tempo Real: Monitore a localização de todos os veículos e entregas em tempo real com mapas interativos",
-                        "Otimização de Rotas: Algoritmos inteligentes que calculam as rotas mais eficientes economizando tempo e combustível",
-                        "App Mobile para Motoristas: Aplicativo nativo para motoristas com navegação, prova de entrega e comunicação direta",
-                        "Gestão de Entregas: Sistema completo de gerenciamento de pedidos, status e ETAs com notificações automáticas",
-                        "Relatórios de Performance: Análise detalhada de métricas como taxa de entrega no prazo, distância percorrida e produtividade"
-                    ]
-                }
+
             },
             cta: {
                 title: "Tem um projeto em mente?",
@@ -483,8 +469,7 @@ export const translations = {
                 saas_type: "Dashboard",
                 fintech_title: "Asset Management",
                 fintech_type: "Fintech Platform",
-                logistics_title: "Logistics Pro",
-                logistics_type: "Mobile System"
+
             }
         },
 
@@ -708,20 +693,7 @@ export const translations = {
                         "Automated Reports: Automatic generation and sending of executive reports to stakeholders"
                     ]
                 },
-                logistics_pro: {
-                    title: "Logistics Pro",
-                    category: "Enterprise",
-                    description: "Robust logistics management system with real-time tracking, route optimization, and detailed performance reporting.",
-                    tech: "React Native, Node.js, Redis",
-                    year: "2023",
-                    features: [
-                        "Real-time Tracking: Monitor all vehicles and deliveries in real-time with interactive maps",
-                        "Route Optimization: Smart algorithms that calculate the most efficient routes saving time and fuel",
-                        "Driver Mobile App: Native app for drivers with navigation, proof of delivery, and direct communication",
-                        "Delivery Management: Complete order management system with status tracking and automated ETAs",
-                        "Performance Reports: Detailed metrics analysis including on-time delivery rate, distance covered, and productivity"
-                    ]
-                }
+
             },
             cta: {
                 title: "Have a project in mind?",
@@ -850,8 +822,7 @@ export const translations = {
                 saas_type: "Tableau de bord",
                 fintech_title: "Gestion d'actifs",
                 fintech_type: "Plateforme Fintech",
-                logistics_title: "Logistics Pro",
-                logistics_type: "Système mobile"
+
             }
         },
 
@@ -1060,20 +1031,7 @@ export const translations = {
                         "Rapports Automatisés: Génération et envoi automatiques de rapports exécutifs aux parties prenantes"
                     ]
                 },
-                logistics_pro: {
-                    title: "Logistics Pro",
-                    category: "Entreprise",
-                    description: "Système de gestion logistique robuste avec suivi en temps réel, optimisation des itinéraires et rapports de performance détaillés.",
-                    tech: "React Native, Node.js, Redis",
-                    year: "2023",
-                    features: [
-                        "Suivi en Temps Réel: Surveillez tous les véhicules et livraisons en temps réel avec des cartes interactives",
-                        "Optimisation d'Itinéraire: Algorithmes intelligents qui calculent les routes les plus efficaces économisant temps et carburant",
-                        "Application Mobile Conducteur: Application native pour conducteurs avec navigation, preuve de livraison et communication directe",
-                        "Gestion des Livraisons: Système complet de gestion des commandes avec suivi de statut et ETAs automatisés",
-                        "Rapports de Performance: Analyse détaillée des métriques comme taux de livraison ponctuelle, distance parcourue et productivité"
-                    ]
-                }
+
             },
             cta: {
                 title: "Vous avez un projet en tête?",

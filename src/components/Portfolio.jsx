@@ -9,7 +9,7 @@ import dashboardImg from '../assets/images/dashboard_dark_analytics_176830125721
 import abacoFinanceImg from '../assets/images/abaco_finance_analysis.jpg';
 import cercargoDashboardImg from '../assets/images/cercargo_dashboard.png';
 import portalDuxChatImg from '../assets/images/portal_dux_chat.png';
-import mobileImg from '../assets/images/mobile_logistics_app_1768301288673.png';
+
 import portfolioHero from '../assets/images/portfolio_hero.png';
 
 const Portfolio = () => {
@@ -58,14 +58,7 @@ const Portfolio = () => {
             badgeColor: 'from-emerald-500 to-teal-600',
             data: t('portfolio.projects.portal_cercargo')
         },
-        {
-            id: 'logistics_pro',
-            image: mobileImg,
-            category: 'enterprise',
-            badge: 'MOBILE-FIRST',
-            badgeColor: 'from-violet-500 to-purple-600',
-            data: t('portfolio.projects.logistics_pro')
-        }
+
     ];
 
     const categories = [
@@ -268,14 +261,7 @@ const Portfolio = () => {
                                                 <ExternalLink className="w-4 h-4" />
                                                 {t('portfolio.case_study')}
                                             </Link>
-                                        ) : project.id === 'logistics_pro' ? (
-                                            <Link
-                                                to="/case-studies/logistics-pro"
-                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
-                                            >
-                                                <ExternalLink className="w-4 h-4" />
-                                                {t('portfolio.case_study')}
-                                            </Link>
+
                                         ) : (
                                             <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm">
                                                 <ExternalLink className="w-4 h-4" />
