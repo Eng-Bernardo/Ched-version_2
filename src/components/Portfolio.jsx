@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 // Import project images
 import dashboardImg from '../assets/images/dashboard_dark_analytics_1768301257210.png';
-import abacoDashboard from '/assets/images/abaco_dashboard.jpg';
-import abacoAnalysis from '/assets/images/abaco_analysis.jpg';
-import abacoAccounts from '/assets/images/abaco_accounts.jpg';
+import abacoFinanceImg from '../assets/images/abaco_finance_analysis.jpg';
+import cercargoDashboardImg from '../assets/images/cercargo_dashboard.png';
+import portalDuxChatImg from '../assets/images/portal_dux_chat.png';
 import mobileImg from '../assets/images/mobile_logistics_app_1768301288673.png';
 import portfolioHero from '../assets/images/portfolio_hero.png';
 
@@ -20,38 +20,50 @@ const Portfolio = () => {
     const projects = [
         {
             id: 'abaco',
-            images: [abacoDashboard, abacoAnalysis, abacoAccounts],
+            image: abacoFinanceImg,
             category: 'fintech',
+            badge: 'LIVE',
+            badgeColor: 'from-emerald-500 to-green-600',
             data: t('portfolio.projects.abaco')
         },
         {
             id: 'dxid',
-            image: '/assets/images/dxid_custom.png',
+            image: '/dxid-management-portal.png',
             category: 'enterprise',
+            badge: 'INTERNATIONAL',
+            badgeColor: 'from-blue-500 to-indigo-600',
             data: t('portfolio.projects.dxid')
         },
         {
             id: 'portal_dux',
-            image: '/assets/images/dux_custom.png',
+            image: portalDuxChatImg,
             category: 'saas',
+            badge: 'REAL-TIME',
+            badgeColor: 'from-purple-500 to-pink-600',
             data: t('portfolio.projects.portal_dux')
         },
         {
-            id: 'portal_cercargo',
-            image: '/assets/images/cercargo_dashboard.png',
+            id: 'promoshare',
+            image: '/promoshare-categories.png',
             category: 'saas',
-            data: t('portfolio.projects.portal_cercargo')
+            badge: 'AI-POWERED',
+            badgeColor: 'from-orange-500 to-red-600',
+            data: t('portfolio.projects.promoshare')
         },
         {
-            id: 'saas_analytics',
-            image: dashboardImg,
-            category: 'saas',
-            data: t('portfolio.projects.saas_analytics')
+            id: 'portal_cercargo',
+            image: '/cercargo-billing.png',
+            category: 'enterprise',
+            badge: 'FINANCIAL',
+            badgeColor: 'from-emerald-500 to-teal-600',
+            data: t('portfolio.projects.portal_cercargo')
         },
         {
             id: 'logistics_pro',
             image: mobileImg,
             category: 'enterprise',
+            badge: 'MOBILE-FIRST',
+            badgeColor: 'from-violet-500 to-purple-600',
             data: t('portfolio.projects.logistics_pro')
         }
     ];
@@ -187,10 +199,10 @@ const Portfolio = () => {
                                         </span>
                                     </div>
 
-                                    {/* Year Badge */}
+                                    {/* Status Badge */}
                                     <div className="absolute top-4 right-4">
-                                        <span className="px-3 py-1.5 bg-black/50 backdrop-blur-sm rounded-full text-xs font-bold text-white">
-                                            {project.data.year}
+                                        <span className={`px-3 py-1.5 bg-gradient-to-r ${project.badgeColor} backdrop-blur-sm rounded-full text-xs font-bold text-white shadow-lg`}>
+                                            {project.badge}
                                         </span>
                                     </div>
                                 </div>
@@ -240,17 +252,17 @@ const Portfolio = () => {
                                                 <ExternalLink className="w-4 h-4" />
                                                 {t('portfolio.case_study')}
                                             </Link>
-                                        ) : project.id === 'portal_cercargo' ? (
+                                        ) : project.id === 'promoshare' ? (
                                             <Link
-                                                to="/case-studies/portal-cercargo"
+                                                to="/case-studies/promoshare"
                                                 className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
                                             >
                                                 <ExternalLink className="w-4 h-4" />
                                                 {t('portfolio.case_study')}
                                             </Link>
-                                        ) : project.id === 'saas_analytics' ? (
+                                        ) : project.id === 'portal_cercargo' ? (
                                             <Link
-                                                to="/case-studies/saas-analytics"
+                                                to="/case-studies/portal-cercargo"
                                                 className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
                                             >
                                                 <ExternalLink className="w-4 h-4" />

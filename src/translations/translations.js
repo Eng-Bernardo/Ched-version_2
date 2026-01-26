@@ -297,19 +297,34 @@ export const translations = {
                         "Interface Responsiva: Design moderno e limpo com experiência otimizada para todos os dispositivos"
                     ]
                 },
-                portal_cercargo: {
-                    title: "Portal Cercargo",
-                    subtitle: "PromoShare",
+                promoshare: {
+                    title: "PromoShare",
+                    subtitle: "Social Commerce Hub",
                     category: "Marketing Tech",
-                    description: "Plataforma de publicação automática de promoções em múltiplos canais de comunicação. Sistema completo com busca por IA e notificações personalizadas para maximizar o alcance de ofertas.",
+                    description: "Sistema inteligente de gestão de categorias e nichos para comércio social. Organização visual de grupos de ofertas com personalização estética e controle centralizado de canais.",
                     tech: "React, Node.js, AI/ML, Telegram API, WhatsApp API",
                     year: "2025",
                     features: [
-                        "Publicação Multi-Canal: Publique promoções automaticamente em múltiplos canais do Telegram e WhatsApp simultaneamente",
-                        "Busca com IA: Utilize inteligência artificial para encontrar produtos com descontos específicos e criar promoções direcionadas",
-                        "Notificações Personalizadas: Sistema inteligente que envia promoções apenas para usuários interessados em categorias específicas",
-                        "Gestão de Preferências: Usuários configuram suas categorias de interesse e recebem apenas promoções relevantes via número privado",
-                        "Dashboard Analítico: Acompanhe métricas de alcance, engajamento e conversão de promoções em tempo real"
+                        "Gestão de Nichos: Painel exclusivo para organização e criação de categorias de produtos (Beleza, Casa, Eletrônicos)",
+                        "Personalização Visual: Sistema de identidade visual com seleção de cores e estética por categoria",
+                        "Controle de Grupos: Gerenciamento centralizado de grupos de ofertas e canais de distribuição",
+                        "Publicação Multi-Canal: Distribuição automática de conteúdo para múltiplos canais segmentados",
+                        "Organização Inteligente: Classificação automática de produtos baseada em categorias e interesses"
+                    ]
+                },
+                portal_cercargo: {
+                    title: "Portal Cercargo",
+                    subtitle: "Gestão Financeira",
+                    category: "Enterprise",
+                    description: "Dashboard completo de gestão financeira e operacional. Visualize faturamento, metas anuais, comparativos mensais e detalhamento por mês com métricas de crescimento e variações.",
+                    tech: "React, Node.js, Financial API, Charts.js",
+                    year: "2025",
+                    features: [
+                        "Dashboard Executivo: Visão macro de faturamento total, metas anuais e receita por categoria (Frete, Armazenagem)",
+                        "Análise Comparativa: Gráficos evolutivos comparando desempenho atual vs. ano anterior",
+                        "Metas em Tempo Real: Acompanhamento percentual de metas mensais e anuais",
+                        "Detalhamento Mensal: Relatórios granulares de faturamento e variação percentual mês a mês",
+                        "Gestão Operacional: Controle integrado de contas e processos financeiros"
                     ]
                 },
                 saas_analytics: {
@@ -649,19 +664,34 @@ export const translations = {
                         "Responsive Interface: Modern, clean design with optimized experience across all devices"
                     ]
                 },
-                portal_cercargo: {
-                    title: "Portal Cercargo",
-                    subtitle: "PromoShare",
+                promoshare: {
+                    title: "PromoShare",
+                    subtitle: "Social Commerce Hub",
                     category: "Marketing Tech",
-                    description: "Automated promotion publishing platform across multiple communication channels. Complete system with AI search and personalized notifications to maximize offer reach.",
+                    description: "Intelligent category and niche management system for social commerce. Visual organization of offer groups with aesthetic customization and centralized channel control.",
                     tech: "React, Node.js, AI/ML, Telegram API, WhatsApp API",
                     year: "2025",
                     features: [
-                        "Multi-Channel Publishing: Automatically publish promotions across multiple Telegram and WhatsApp channels simultaneously",
-                        "AI-Powered Search: Use artificial intelligence to find products with specific discounts and create targeted promotions",
-                        "Personalized Notifications: Smart system that sends promotions only to users interested in specific categories",
-                        "Preference Management: Users configure their interest categories and receive only relevant promotions via private number",
-                        "Analytics Dashboard: Track reach, engagement, and conversion metrics of promotions in real-time"
+                        "Niche Management: Exclusive dashboard for organizing and creating product categories (Beauty, Home, Electronics)",
+                        "Visual Customization: Visual identity system with color selection and aesthetics per category",
+                        "Group Control: Centralized management of offer groups and distribution channels",
+                        "Multi-Channel Publishing: Automatic content distribution to multiple segmented channels",
+                        "Smart Organization: Automatic product classification based on categories and interests"
+                    ]
+                },
+                portal_cercargo: {
+                    title: "Portal Cercargo",
+                    subtitle: "Financial Management",
+                    category: "Enterprise",
+                    description: "Complete financial and operational management dashboard. Visualize revenue, annual goals, monthly comparisons, and detailed monthly breakdown with growth metrics and variations.",
+                    tech: "React, Node.js, Financial API, Charts.js",
+                    year: "2025",
+                    features: [
+                        "Executive Dashboard: Macro view of total revenue, annual goals, and revenue by category (Freight, Storage)",
+                        "Comparative Analysis: Evolutionary charts comparing current performance vs. previous year",
+                        "Real-Time Goals: Percentage tracking of monthly and annual goals",
+                        "Monthly Breakdown: Granular reports of revenue and percentage variation month over month",
+                        "Operational Management: Integrated control of accounts and financial processes"
                     ]
                 },
                 saas_analytics: {
