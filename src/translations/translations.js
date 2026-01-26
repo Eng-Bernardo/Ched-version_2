@@ -69,7 +69,7 @@ export const translations = {
         variations: {
             badge: "(Variações)",
             title: "VARIAÇÕES DE DESIGN ILIMITADAS",
-            description: "Crie opções de UI modernas e adaptáveis, experimentando diferentes estilos e estruturas. De sistemas hospitalares complexos a portais educacionais intuitivos, nossa arquitetura se molda às suas necessidades.",
+            description: "Crie opções de UI modernas e adaptáveis, experimentando diferentes estilos e estruturas. De dashboards fintech complexos a plataformas SaaS intuitivas, nossa arquitetura se molda às suas necessidades.",
             features: {
                 arch_title: "Arquitetura Flexível",
                 arch_desc: "Sistemas modulares e escaláveis",
@@ -77,22 +77,22 @@ export const translations = {
                 themes_desc: "Consistência visual em qualquer contexto"
             },
             cards: {
-                hospital_title: "Sistema Hospitalar",
-                school_title: "Portal Escolar",
-                erp_title: "Dashboard Empresarial"
+                hospital_title: "Plataforma Fintech",
+                school_title: "Solução SaaS",
+                erp_title: "Sistema Enterprise"
             },
             demo: {
-                erp_revenue: "Receita do Projeto",
-                phase: "Fase",
-                students: "Alunos",
-                attendance: "Frequência",
-                today_classes: "Aulas de Hoje",
-                math: "Matemática",
-                history: "História",
-                physics: "Física",
-                recent_patients: "Pacientes Recentes",
-                health_metrics: "Métricas de Saúde",
-                systems_normal: "Todos os Sistemas Normais"
+                erp_revenue: "Receita Anual",
+                phase: "Q",
+                students: "Usuários Ativos",
+                attendance: "Retenção",
+                today_classes: "Métricas Principais",
+                math: "MRR",
+                history: "LTV",
+                physics: "Churn",
+                recent_patients: "Transações Recentes",
+                health_metrics: "Performance de Ativos",
+                systems_normal: "Sistemas Operacionais"
             }
         },
         footer: {
@@ -436,7 +436,7 @@ export const translations = {
         variations: {
             badge: "(Variations)",
             title: "UNLIMITED DESIGN VARIATIONS",
-            description: "Create modern and adaptable UI options, experimenting with different styles and structures. From complex hospital systems to intuitive educational portals, our architecture molds to your needs.",
+            description: "Create modern and adaptable UI options, experimenting with different styles and structures. From complex fintech dashboards to intuitive SaaS platforms, our architecture molds to your needs.",
             features: {
                 arch_title: "Flexible Architecture",
                 arch_desc: "Modular and scalable systems",
@@ -444,22 +444,22 @@ export const translations = {
                 themes_desc: "Visual consistency in any context"
             },
             cards: {
-                hospital_title: "Hospital System",
-                school_title: "School Portal",
-                erp_title: "Company Dashboard"
+                hospital_title: "Fintech Platform",
+                school_title: "SaaS Solution",
+                erp_title: "Enterprise System"
             },
             demo: {
-                erp_revenue: "Project Revenue",
-                phase: "Phase",
-                students: "Students",
-                attendance: "Attendance",
-                today_classes: "Today's Classes",
-                math: "Mathematics",
-                history: "History",
-                physics: "Physics",
-                recent_patients: "Recent Patients",
-                health_metrics: "Health Metrics",
-                systems_normal: "All Systems Normal"
+                erp_revenue: "Annual Revenue",
+                phase: "Q",
+                students: "Active Users",
+                attendance: "Retention",
+                today_classes: "Key Metrics",
+                math: "MRR",
+                history: "LTV",
+                physics: "Churn",
+                recent_patients: "Recent Transactions",
+                health_metrics: "Asset Performance",
+                systems_normal: "All Systems Operational"
             }
         },
         footer: {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-    Activity, Users, BookOpen,
-    Calendar, Target, Plus,
-    CheckCircle2, Layers, Palette
+    Activity, Users, Globe,
+    TrendingUp, Target, Plus,
+    CheckCircle2, Layers, Palette, Wallet, BarChart3
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -76,10 +76,10 @@ const VariationsSection = () => {
                                 className="absolute inset-0 bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 origin-bottom-center z-10 flex flex-col"
                             >
                                 <div className="p-3 border-b border-slate-100 flex items-center gap-2">
-                                    <div className="w-5 h-5 rounded-md bg-indigo-600 flex items-center justify-center text-white">
-                                        <BookOpen size={10} />
+                                    <div className="w-5 h-5 rounded-md bg-purple-600 flex items-center justify-center text-white">
+                                        <Globe size={10} />
                                     </div>
-                                    <div className="text-[10px] font-bold text-slate-800">EduPortal</div>
+                                    <div className="text-[10px] font-bold text-slate-800">SaaS One</div>
                                 </div>
                                 <div className="p-4 flex-1">
                                     <div className="flex gap-4 mb-6">
@@ -96,7 +96,7 @@ const VariationsSection = () => {
                                     <div className="space-y-2">
                                         {[t('variations.demo.math'), t('variations.demo.history'), t('variations.demo.physics')].map((sub, i) => (
                                             <div key={i} className="flex items-center gap-2 p-2 rounded-md bg-slate-50 border border-slate-100">
-                                                <Calendar size={10} className="text-slate-400" />
+                                                <TrendingUp size={10} className="text-slate-400" />
                                                 <span className="text-[9px] text-slate-600">{sub}</span>
                                             </div>
                                         ))}
@@ -118,8 +118,8 @@ const VariationsSection = () => {
                             >
                                 <div className="p-3 border-b border-blue-50 bg-blue-600 flex justify-between items-center text-white">
                                     <div className="flex items-center gap-2">
-                                        <Activity size={14} />
-                                        <span className="text-[10px] font-bold">NexusHealth</span>
+                                        <Wallet size={14} />
+                                        <span className="text-[10px] font-bold">FintechPro</span>
                                     </div>
                                     <Plus size={14} />
                                 </div>
@@ -127,7 +127,7 @@ const VariationsSection = () => {
                                     <div className="bg-slate-50 rounded-lg p-3 mb-4 border border-slate-100">
                                         <div className="flex items-center gap-2 mb-3">
                                             <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
-                                                <Users size={12} />
+                                                <BarChart3 size={12} />
                                             </div>
                                             <div className="text-[9px] font-bold text-slate-800">{t('variations.demo.recent_patients')}</div>
                                         </div>
