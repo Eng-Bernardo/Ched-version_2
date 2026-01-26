@@ -22,7 +22,7 @@ const CaseStudyPromoShare = () => {
     ];
 
     // Access the translated data
-    const projectData = t('portfolio.projects.portal_cercargo');
+    const projectData = t('portfolio.projects.promoshare');
 
     // Ensure we have fallbacks if specific translation keys are missing
     const features = projectData.features || [
