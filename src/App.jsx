@@ -16,7 +16,7 @@ import CaseStudySaaS from './components/CaseStudySaaS';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navbar />
