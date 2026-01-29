@@ -11,8 +11,8 @@ import { Play } from 'lucide-react';
 
 // Placeholder paths - user needs to ensure files exist at these locations in public folder or fix imports
 // Placeholder paths - matching the found files in public/assets/images/
-const video1 = "/assets/images/Video1.mp4";
-const video2 = "/assets/images/Video2.mp4";
+const video1 = `${import.meta.env.BASE_URL}assets/images/Video1.mp4`;
+const video2 = `${import.meta.env.BASE_URL}assets/images/Video2.mp4`;
 
 const AiDetectionSection = () => {
     const { t } = useLanguage();
