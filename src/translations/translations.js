@@ -117,7 +117,15 @@ export const translations = {
                 fintech_title: "Gestão de Ativos",
                 fintech_type: "Plataforma Fintech",
 
-            }
+            },
+
+        },
+        ai_detection: {
+            title: "Detecção por IA",
+            subtitle: "Tecnologia de ponta para análise e monitoramento inteligente.",
+            video1_label: "Detecção de Objetos",
+            video2_label: "Análise Comportamental",
+            description: "Nossos sistemas utilizam algoritmos avançados de visão computacional para identificar padrões, objetos e anomalias em tempo real, garantindo segurança e eficiência operacional."
         },
 
         ourStory: {
@@ -470,7 +478,15 @@ export const translations = {
                 fintech_title: "Asset Management",
                 fintech_type: "Fintech Platform",
 
-            }
+            },
+
+        },
+        ai_detection: {
+            title: "AI Detection",
+            subtitle: "Cutting-edge technology for intelligent analysis and monitoring.",
+            video1_label: "Object Detection",
+            video2_label: "Behavioral Analysis",
+            description: "Our systems use advanced computer vision algorithms to identify patterns, objects, and anomalies in real-time, ensuring security and operational efficiency."
         },
 
         ourStory: {
@@ -798,8 +814,15 @@ export const translations = {
                 physics: "Physique",
                 recent_patients: "Patients Récents",
                 health_metrics: "Mesures de Santé",
-                systems_normal: "Tous les Systèmes Normaux"
-            }
+                systems_normal: "Tous les Systèmes Opérationnels"
+            },
+        },
+        ai_detection: {
+            title: "Détection par IA",
+            subtitle: "Technologie de pointe pour l'analyse et la surveillance intelligente.",
+            video1_label: "Détection d'Objets",
+            video2_label: "Analyse Comportementale",
+            description: "Nos systèmes utilisent des algorithmes avancés de vision par ordinateur pour identifier des modèles, des objets et des anomalies en temps réel, garantissant la sécurité et l'efficacité opérationnelle."
         },
         footer: {
             description: "Transformer des idées en systèmes réels, structurés et évolutifs, conçus pour le long terme.",
