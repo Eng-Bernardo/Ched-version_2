@@ -75,7 +75,6 @@ const Footer = () => {
                             <h4 className="font-bold text-lg mb-6 text-white">{t('footer.header_company')}</h4>
                             <ul className="space-y-4">
                                 <li><a href="#" className="text-slate-400 hover:text-white transition-colors">{t('footer.about')}</a></li>
-                                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">{t('footer.careers')}</a></li>
                                 <li><a href="#" className="text-slate-400 hover:text-white transition-colors">{t('footer.contact')}</a></li>
                             </ul>
                         </div>

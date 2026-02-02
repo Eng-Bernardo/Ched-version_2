@@ -58,6 +58,14 @@ const Portfolio = () => {
             badgeColor: 'from-emerald-500 to-teal-600',
             data: t('portfolio.projects.portal_cercargo')
         },
+        {
+            id: 'ai_detection',
+            video: `${import.meta.env.BASE_URL}assets/images/Video2.mp4`,
+            category: 'enterprise',
+            badge: 'AI-POWERED',
+            badgeColor: 'from-cyan-500 to-blue-600',
+            data: t('portfolio.projects.ai_detection')
+        },
 
     ];
 
@@ -146,9 +154,21 @@ const Portfolio = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
                             >
-                                {/* Project Image/Carousel - Fixed Height */}
+                                {/* Project Image/Video/Carousel - Fixed Height */}
                                 <div className="relative h-56 overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50 flex-shrink-0">
-                                    {project.images ? (
+                                    {project.video ? (
+                                        // Video
+                                        <video
+                                            className="w-full h-full object-cover"
+                                            autoPlay
+                                            muted
+                                            loop
+                                            playsInline
+                                        >
+                                            <source src={project.video} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    ) : project.images ? (
                                         // Multiple images - Carousel
                                         <>
                                             {project.images.map((img, imgIndex) => (

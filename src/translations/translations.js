@@ -348,6 +348,20 @@ export const translations = {
                         "Relatórios Automáticos: Geração e envio automático de relatórios executivos para stakeholders"
                     ]
                 },
+                ai_detection: {
+                    title: "Sistemas de Detecção por IA",
+                    category: "IA Empresarial",
+                    description: "Soluções avançadas de visão computacional para detecção de objetos, análise comportamental e monitoramento inteligente em tempo real.",
+                    tech: "Python, TensorFlow, OpenCV, Computer Vision, AI/ML",
+                    year: "2025",
+                    features: [
+                        "Detecção de Pessoas: Análise comportamental e geração de logs por pessoas, de acordo com a movimentação",
+                        "Detecção de EPI: Identificação de equipamentos de proteção individual em obras",
+                        "Faixas Virtuais: Análise baseada em faixas virtuais com alertas sonoros quando pessoas ultrapassam linhas",
+                        "Câmera de Trem: Contagem automática de locomotivas e vagões com validação e detecção de irregularidades",
+                        "Logs Inteligentes: Geração automática de relatórios e cruzamento de dados para validação"
+                    ]
+                },
 
             },
             cta: {
@@ -709,6 +723,20 @@ export const translations = {
                         "Automated Reports: Automatic generation and sending of executive reports to stakeholders"
                     ]
                 },
+                ai_detection: {
+                    title: "AI Detection Systems",
+                    category: "Enterprise AI",
+                    description: "Advanced computer vision solutions for object detection, behavioral analysis, and intelligent real-time monitoring.",
+                    tech: "Python, TensorFlow, OpenCV, Computer Vision, AI/ML",
+                    year: "2025",
+                    features: [
+                        "People Detection: Behavioral analysis and person-based logging according to movement patterns",
+                        "PPE Detection: Identification of personal protective equipment on construction sites",
+                        "Virtual Boundaries: Virtual line-based analysis with audio alerts when people cross boundaries",
+                        "Train Camera: Automatic counting of locomotives and wagons with validation and irregularity detection",
+                        "Smart Logs: Automatic report generation and data cross-referencing for validation"
+                    ]
+                },
 
             },
             cta: {
@@ -1052,6 +1080,20 @@ export const translations = {
                         "Métriques Personnalisées: Créez et suivez des métriques personnalisées spécifiques à votre modèle commercial",
                         "Analyse de Cohorte: Comprenez le comportement des groupes d'utilisateurs dans le temps avec visualisations avancées",
                         "Rapports Automatisés: Génération et envoi automatiques de rapports exécutifs aux parties prenantes"
+                    ]
+                },
+                ai_detection: {
+                    title: "Systèmes de Détection IA",
+                    category: "IA d'Entreprise",
+                    description: "Solutions avancées de vision par ordinateur pour la détection d'objets, l'analyse comportementale et la surveillance intelligente en temps réel.",
+                    tech: "Python, TensorFlow, OpenCV, Vision par Ordinateur, IA/ML",
+                    year: "2025",
+                    features: [
+                        "Détection de Personnes: Analyse comportementale et génération de journaux par personne selon les mouvements",
+                        "Détection d'EPI: Identification des équipements de protection individuelle sur les chantiers",
+                        "Limites Virtuelles: Analyse basée sur des lignes virtuelles avec alertes sonores lors du franchissement",
+                        "Caméra de Train: Comptage automatique des locomotives et wagons avec validation et détection d'irrégularités",
+                        "Journaux Intelligents: Génération automatique de rapports et recoupement de données pour validation"
                     ]
                 },
 

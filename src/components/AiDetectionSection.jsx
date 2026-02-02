@@ -56,7 +56,7 @@ const AiDetectionSection = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
-                    {/* Video 1 */}
+                    {/* Video 2 (now on left) */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -73,9 +73,9 @@ const AiDetectionSection = () => {
                                 loop
                                 playsInline
                                 controls={false}
-                                poster="/path/to/poster1.jpg" // Add a poster image if available
+                                poster="/path/to/poster2.jpg" // Add a poster image if available
                             >
-                                <source src={video1} type="video/mp4" />
+                                <source src={video2} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
 
@@ -83,12 +83,12 @@ const AiDetectionSection = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent pointer-events-none" />
 
                             <div className="absolute bottom-0 left-0 p-6 pointer-events-none">
-                                <h3 className="text-white font-bold text-xl mb-1">{t('ai_detection.video1_label')}</h3>
+                                <h3 className="text-white font-bold text-xl mb-1">{t('ai_detection.video2_label')}</h3>
                             </div>
                         </div>
                     </motion.div>
 
-                    {/* Video 2 */}
+                    {/* Video 1 (now on right) */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -104,16 +104,16 @@ const AiDetectionSection = () => {
                                 loop
                                 playsInline
                                 controls={false}
-                                poster="/path/to/poster2.jpg" // Add a poster image if available
+                                poster="/path/to/poster1.jpg" // Add a poster image if available
                             >
-                                <source src={video2} type="video/mp4" />
+                                <source src={video1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
 
                             <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent pointer-events-none" />
 
                             <div className="absolute bottom-0 left-0 p-6 pointer-events-none">
-                                <h3 className="text-white font-bold text-xl mb-1">{t('ai_detection.video2_label')}</h3>
+                                <h3 className="text-white font-bold text-xl mb-1">{t('ai_detection.video1_label')}</h3>
                             </div>
                         </div>
                     </motion.div>

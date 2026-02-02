@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle, AlertCircle, Github, Linkedin, Twitter } from 'lucide-react';
 import contactHero from '../assets/images/contact_hero.png';
 import contactTeam from '../assets/images/contact_team.png';
 import contactAbstract from '../assets/images/contact_abstract.png';
@@ -53,25 +53,11 @@ const Contact = () => {
             color: 'from-blue-500 to-indigo-600'
         },
         {
-            icon: Phone,
-            title: t('contact.info.phone_label'),
-            value: '+351 123 456 789',
-            link: 'tel:+351123456789',
-            color: 'from-purple-500 to-pink-600'
-        },
-        {
             icon: MapPin,
             title: t('contact.info.address_label'),
-            value: 'Lisboa, Portugal',
+            value: 'Brazil, Joinville',
             link: null,
             color: 'from-emerald-500 to-teal-600'
-        },
-        {
-            icon: Clock,
-            title: t('contact.info.hours_label'),
-            value: t('contact.info.hours_value'),
-            link: null,
-            color: 'from-orange-500 to-red-600'
         }
     ];
 
@@ -114,7 +100,7 @@ const Contact = () => {
             {/* Contact Methods Grid */}
             <section className="py-20 px-4 sm:px-6 lg:px-8 -mt-20 relative z-10">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                         {contactMethods.map((method, index) => (
                             <div
                                 key={index}
