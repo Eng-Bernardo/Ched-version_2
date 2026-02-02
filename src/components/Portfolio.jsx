@@ -282,6 +282,14 @@ const Portfolio = () => {
                                                 {t('portfolio.case_study')}
                                             </Link>
 
+                                        ) : project.id === 'ai_detection' ? (
+                                            <Link
+                                                to="/case-studies/ai-detection"
+                                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                {t('portfolio.case_study')}
+                                            </Link>
                                         ) : (
                                             <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors text-sm">
                                                 <ExternalLink className="w-4 h-4" />

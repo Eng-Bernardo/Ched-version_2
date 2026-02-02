@@ -358,7 +358,7 @@ export const translations = {
                         "Detecção de Pessoas: Análise comportamental e geração de logs por pessoas, de acordo com a movimentação",
                         "Detecção de EPI: Identificação de equipamentos de proteção individual em obras",
                         "Faixas Virtuais: Análise baseada em faixas virtuais com alertas sonoros quando pessoas ultrapassam linhas",
-                        "Câmera de Trem: Contagem automática de locomotivas e vagões com validação e detecção de irregularidades",
+                        "Câmera de Trem: Contagem automática de locomotivas e vagões (com identificação), geração de logs detalhados, cruzamento com a ficha do trem e alertas para vagões não autorizados",
                         "Logs Inteligentes: Geração automática de relatórios e cruzamento de dados para validação"
                     ]
                 },
@@ -733,7 +733,7 @@ export const translations = {
                         "People Detection: Behavioral analysis and person-based logging according to movement patterns",
                         "PPE Detection: Identification of personal protective equipment on construction sites",
                         "Virtual Boundaries: Virtual line-based analysis with audio alerts when people cross boundaries",
-                        "Train Camera: Automatic counting of locomotives and wagons with validation and irregularity detection",
+                        "Train Camera: Automatic counting of locomotives and wagons (with identification), detailed log generation, cross-referencing with train manifests, and alerts for rogue wagons",
                         "Smart Logs: Automatic report generation and data cross-referencing for validation"
                     ]
                 },
@@ -1092,7 +1092,7 @@ export const translations = {
                         "Détection de Personnes: Analyse comportementale et génération de journaux par personne selon les mouvements",
                         "Détection d'EPI: Identification des équipements de protection individuelle sur les chantiers",
                         "Limites Virtuelles: Analyse basée sur des lignes virtuelles avec alertes sonores lors du franchissement",
-                        "Caméra de Train: Comptage automatique des locomotives et wagons avec validation et détection d'irrégularités",
+                        "Caméra de Train: Comptage automatique des locomotives et wagons (avec identification), génération de journaux détaillés, croisement avec la fiche du train et alertes pour les wagons non autorisés",
                         "Journaux Intelligents: Génération automatique de rapports et recoupement de données pour validation"
                     ]
                 },
