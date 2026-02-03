@@ -33,7 +33,7 @@ const CaseStudyPortalCercargo = () => {
             {/* Fixed Back Button - Always Visible */}
             <button
                 onClick={() => navigate('/portfolio')}
-                className="fixed top-24 left-6 z-50 inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-emerald-50 text-gray-700 hover:text-emerald-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200 hover:border-emerald-300 font-medium"
+                className="fixed bottom-6 left-6 z-50 inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-emerald-50 text-gray-700 hover:text-emerald-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200 hover:border-emerald-300 font-medium"
             >
                 <ArrowLeft size={20} strokeWidth={2} />
                 <span className="hidden sm:inline">Back to Portfolio</span>
