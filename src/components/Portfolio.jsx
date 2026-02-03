@@ -232,12 +232,7 @@ const Portfolio = () => {
                                         {project.data.description}
                                     </p>
 
-                                    {/* Tech Stack - Fixed height */}
-                                    <div className="mb-4 h-10 flex items-center">
-                                        <p className="text-xs text-gray-500 font-medium line-clamp-2">
-                                            {project.data.tech}
-                                        </p>
-                                    </div>
+
 
                                     {/* Action Button - Push to bottom */}
                                     <div className="mt-auto">

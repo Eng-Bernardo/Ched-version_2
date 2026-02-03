@@ -72,20 +72,7 @@ const CaseStudyAbaco = () => {
                                 </div>
                             </div>
 
-                            {/* Tech Stack */}
-                            <div className="mb-8">
-                                <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Technology Stack</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {t('portfolio.projects.abaco.tech').split(', ').map((tech, index) => (
-                                        <span
-                                            key={index}
-                                            className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700"
-                                        >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
+
                         </motion.div>
 
                         {/* Main Screenshot */}
@@ -187,8 +174,8 @@ const CaseStudyAbaco = () => {
                                 key={index}
                                 onClick={() => setActiveImage(index)}
                                 className={`relative rounded-xl overflow-hidden transition-all ${activeImage === index
-                                        ? 'ring-4 ring-indigo-600 shadow-xl'
-                                        : 'opacity-60 hover:opacity-100'
+                                    ? 'ring-4 ring-indigo-600 shadow-xl'
+                                    : 'opacity-60 hover:opacity-100'
                                     }`}
                             >
                                 <img

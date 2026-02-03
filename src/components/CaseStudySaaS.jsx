@@ -54,14 +54,7 @@ const CaseStudySaaS = () => {
                                 </div>
                             </div>
 
-                            <div className="mb-8">
-                                <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">Technology Stack</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {projectData.tech.split(', ').map((tech, index) => (
-                                        <span key={index} className="px-3 py-1.5 bg-white border border-blue-200 rounded-full text-sm font-medium text-gray-700">{tech}</span>
-                                    ))}
-                                </div>
-                            </div>
+
                         </motion.div>
 
                         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }} className="relative">
