@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, CheckCircle2, TrendingUp, Shield, Zap, BarChart3, Users } from 'lucide-react';
 
@@ -22,14 +22,6 @@ const CaseStudyAbaco = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-            {/* Fixed Back Button - Always Visible */}
-            <button
-                onClick={() => navigate('/portfolio')}
-                className="fixed bottom-6 left-6 z-50 inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-indigo-50 text-gray-700 hover:text-indigo-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200 hover:border-indigo-300 font-medium"
-            >
-                <ArrowLeft className="w-4 h-4" />
-                <span className="hidden sm:inline">Back to Portfolio</span>
-            </button>
 
             {/* Hero Section */}
             <section className="py-16 px-4 sm:px-6 lg:px-8">

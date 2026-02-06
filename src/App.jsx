@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import GlobalBackButton from './components/GlobalBackButton';
 import CaseStudyAbaco from './components/CaseStudyAbaco';
 import CaseStudyDXID from './components/CaseStudyDXID';
 import CaseStudyPortalDUX from './components/CaseStudyPortalDUX';
@@ -21,6 +22,7 @@ function App() {
       <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navbar />
+        <GlobalBackButton />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
